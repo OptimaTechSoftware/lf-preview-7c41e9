@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ru">
+<head><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Подсолнечное масло · Live Food</title>
+<meta name="description" content="Подсолнечное масло — нерафинированное, холодного отжима, с насыщенным натуральным вкусом. Используется в салатах, кашах, овощных и злаковых блюдах, в выпеч">
+<link rel="icon" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>.pc.qhide{display:none!important}
+:root{--g950:#0F1C14;--g900:#142619;--g800:#1E3727;--g700:#2F5A3A;--gold:#C9A45C;--gold-on-dark:#D9B76E;--gold-soft:#E8D3A1;--paper:#FBF7EE;--paper-2:#F7EEDC;--ink:#1B2A20;--ink-2:#55635A;--line:rgba(27,42,32,.14);--on:#F3F1EA;--on-2:rgba(243,241,234,.72);--frame:rgba(243,241,234,.16);--serif:"Cormorant Garamond",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif;--wrap:1200px;--side:clamp(20px,5vw,64px);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}html,body{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--side)}
+.eyebrow{display:block;font-size:.95rem;color:var(--ink-2);margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:999px;border:1px solid transparent;font-weight:500;font-size:1rem;text-decoration:none;cursor:pointer;transition:background .25s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--gold-on-dark);color:var(--g950)}.btn-gold:hover{background:var(--gold-soft)}
+.btn-green{background:var(--g700);color:var(--on)}.btn-line{border-color:var(--g700);color:var(--g700);background:transparent}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+/* шапка: на блоге всегда светлая */
+.top{position:sticky;top:0;z-index:50;background:rgba(243,241,234,.92);backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.top .logo img{height:40px;width:auto}
+.top nav{display:flex;gap:30px;margin-left:auto}
+.top nav a{text-decoration:none;font-size:1rem;opacity:.88}.top nav a:hover,.top nav a.on{opacity:1}
+.top nav a.on{color:var(--g700);font-weight:500}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:999px;background:transparent;margin-left:auto}
+.menu{position:fixed;inset:0;z-index:60;background:var(--paper);display:flex;flex-direction:column;justify-content:center;gap:4px;padding:0 var(--side);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.menu.on{opacity:1;visibility:visible}
+.menu a{font-family:var(--serif);font-size:2.2rem;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.menu .x{position:absolute;top:14px;right:var(--side);width:48px;height:48px;border-radius:999px;border:1px solid var(--line);background:transparent;font-size:1.4rem}
+/* блог: обложка */
+.bhero{position:relative;padding:0;min-height:min(78vh,680px);display:flex;align-items:center;overflow:hidden;background:#16241B;color:#fff}.bhero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,24,17,.88) 0%,rgba(14,24,17,.72) 38%,rgba(14,24,17,.25) 72%,rgba(14,24,17,.1) 100%);z-index:1}.bhero .wrap.bhero-grid{position:static;width:100%}.bhero-grid>div:first-child{position:relative;z-index:2;max-width:620px;padding:clamp(48px,7vw,96px) 0}
+.bhero-grid{display:block}
+.bhero h1{font-size:clamp(2.6rem,5vw,4.4rem);max-width:14ch;color:#fff}.bhero .eyebrow{color:rgba(255,255,255,.85)}
+.bhero p{color:rgba(255,255,255,.92);max-width:48ch;margin-top:18px;font-size:1.05rem}
+.bhero .pic{position:absolute;inset:0;z-index:0}
+.bhero .pic img{width:100%;height:100%;object-fit:cover}
+.secs{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.secs a{min-height:40px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-size:.95rem}
+.secs a:hover{border-color:var(--g700);color:var(--g700)}.bhero .secs a{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(14,24,17,.35)}.bhero .secs a:hover{background:#fff;color:#16241B;border-color:#fff}
+/* разделы и карточки */
+.bsec{padding:clamp(40px,6vw,80px) 0}
+.bsec + .bsec{border-top:1px solid var(--line)}
+.bhead{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+.bhead h2{font-size:clamp(2rem,3.6vw,3rem)}
+.bhead p{color:var(--ink-2);max-width:56ch;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 22px}
+.card{text-decoration:none;display:block}
+.card .pic{aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:var(--paper-2)}
+.card .pic img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.card:hover .pic img{transform:scale(1.03)}
+.card small{display:block;color:var(--ink-2);margin:14px 0 6px;font-size:.9rem}
+.card h3{font-size:1.5rem;line-height:1.15}
+.card p{color:var(--ink-2);margin-top:8px;font-size:.98rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* статья */
+.art{padding:clamp(40px,6vw,80px) 0}
+.crumbs{font-size:.95rem;color:var(--ink-2);margin-bottom:28px}
+.crumbs a{text-decoration:none}.crumbs a:hover{color:var(--g700)}
+.art h1{font-size:clamp(2.2rem,4.4vw,3.8rem);max-width:20ch}
+.art .lead{font-size:1.15rem;color:var(--ink-2);max-width:60ch;margin-top:18px}
+.art .cover{margin:36px 0 44px;border-radius:8px;overflow:hidden;aspect-ratio:16/9;max-height:560px;background:var(--paper-2)}
+.art .cover img{width:100%;height:100%;object-fit:cover}
+.art .cover.tall{aspect-ratio:4/3;max-width:720px}
+.body{max-width:66ch;font-size:1.05rem;line-height:1.65}
+.body{max-width:none}.body li{margin-bottom:6px}.body ul{list-style:none;margin-left:0;padding-left:0}.body ul li{position:relative;padding-left:20px}
+.body ul li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.body ol{padding-left:22px;margin-left:0}.body p{margin:0 0 14px}
+.body ul.chk{display:grid;gap:8px;margin-bottom:18px}.body ul.chk li{padding:12px 14px 12px 44px;background:#fff;border-radius:10px;margin:0}
+.body ul.chk li::before{left:14px;top:12px;width:20px;height:20px;border-radius:50%;background:#EAF0E9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10l3.2 3L15 7' fill='none' stroke='%232F5A3A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 10px 96px;max-width:760px}
+.facts div{background:#fff;border-radius:14px;padding:18px 20px}.facts b{display:block;font-family:var(--serif);font-size:2.4rem;line-height:1;color:var(--g700);font-weight:400}.facts span{display:block;margin-top:8px;color:var(--ink-2);font-size:.95rem;line-height:1.3}
+.mag{max-width:1120px;position:relative}
+.line{position:absolute;left:30px;top:0;bottom:0;width:2px;background:rgba(27,42,32,.1);border-radius:2px}.line i{position:absolute;left:0;top:0;width:100%;height:var(--p,0%);background:linear-gradient(180deg,var(--gold),#A8842F);border-radius:2px;transition:height .15s linear}
+.mag .intro{font-size:1.15rem;max-width:62ch;margin:0 0 10px 96px}
+.mag .sec{display:grid;grid-template-columns:96px minmax(0,58ch) minmax(220px,1fr);grid-template-rows:auto 1fr;gap:20px 44px;padding-top:44px;margin-top:34px;align-items:start;position:relative;border-top:1px solid var(--line)}
+.mag .sec::before{content:"";position:absolute;left:24px;top:52px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid rgba(27,42,32,.25);box-sizing:border-box;transition:background .4s,border-color .4s,transform .4s;z-index:1}
+.mag .sec.lit::before{background:var(--gold);border-color:var(--gold);transform:scale(1.25)}
+.mag .num{font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--gold);padding-left:58px;padding-top:2px}
+.body.mag .sec>h2{font-size:1.75rem;line-height:1.15;margin:0 0 14px;grid-column:2;font-family:var(--serif);font-weight:400}.mag .txt{grid-column:2}
+.body.mag .sec h3{font-size:1.2rem;margin:24px 0 8px;font-family:var(--sans);font-weight:500}
+.mag .side{grid-column:3;grid-row:1/3;position:sticky;top:110px}
+.mag .ph{margin:0}.mag .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;display:block}.mag .ph figcaption{font-size:.9rem;color:var(--ink-2);margin-top:8px}
+.mag .pull{font-family:var(--serif);font-size:1.5rem;line-height:1.3;color:var(--g700);border-left:2px solid var(--gold);padding-left:18px;margin:0}
+.mag .sec.alt{grid-template-columns:96px minmax(220px,1fr) minmax(0,58ch)}.body.mag .sec.alt>h2,.mag .sec.alt .txt{grid-column:3}.mag .sec.alt .side{grid-column:2}
+.mag .sec.noside{grid-template-columns:96px minmax(0,66ch)}
+.mrv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.mrv.in{opacity:1;transform:none}
+.mag .cta{margin:48px 0 0 96px;max-width:58ch;background:var(--g950);color:var(--on);border-radius:18px;padding:30px 32px;display:grid;gap:14px}
+.body.mag .cta h2{font-family:var(--serif);font-weight:400;font-size:1.8rem;margin:0;color:var(--on)}.mag .cta p{margin:0;color:var(--on-2);max-width:44ch}.mag .cta .btn{justify-self:start}
+@media (max-width:900px){.mag{padding-left:22px}.line{left:6px}.mag .sec::before{left:-22px;top:50px}.mag .intro,.mag .cta,.facts{margin-left:0}.mag .sec,.mag .sec.alt,.mag .sec.noside{grid-template-columns:1fr;grid-template-rows:none}.mag .num{padding-left:0;font-size:1.8rem}.body.mag .sec>h2,.mag .txt,.mag .side,.body.mag .sec.alt>h2,.mag .sec.alt .txt,.mag .sec.alt .side{grid-column:1;grid-row:auto;position:static}.mag .ph img{aspect-ratio:auto;height:auto}.facts{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){.mrv{opacity:1;transform:none;transition:none}.line i{transition:none}}
+
+.body h2{font-size:2rem;margin:44px 0 14px}
+.body h3{font-size:1.4rem;margin:30px 0 10px}
+.body p{margin:0 0 16px}
+.body ul,.body ol{margin:0 0 20px 22px}
+.body li{margin-bottom:8px}
+.body ol li::marker{color:var(--g700);font-weight:500}
+.body .note{padding:16px 20px;background:var(--paper-2);border-left:3px solid var(--gold);border-radius:0 8px 8px 0}
+.prods{margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.prods h2{font-size:1.6rem;margin-bottom:14px}
+.prods ul{display:flex;gap:10px;flex-wrap:wrap;list-style:none}
+.prods a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--g700);color:var(--g700);text-decoration:none;font-weight:500}
+.prods a:hover{background:rgba(47,90,58,.08)}
+.more{margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+.more h2{font-size:2rem;margin-bottom:24px}
+/* подвал */
+.foot{background:var(--g950);color:var(--on);padding:80px 0 40px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.25fr .8fr 1fr 1.2fr;gap:40px 32px}.foot h4{margin:0 0 14px;font:500 .9rem/1 inherit;font-family:var(--sans);color:var(--on-2);opacity:.8}.foot-brand p{margin:0 0 4px;max-width:30ch;line-height:1.5}.foot address{font-style:normal;display:grid;gap:3px;color:var(--on-2);line-height:1.45}.foot address b{display:block;font-weight:500;color:var(--on);margin-top:12px;font-size:.92rem}.foot address b:first-child{margin-top:0}.foot address .ig{margin-top:14px;display:inline-flex;align-items:center;gap:8px}.foot address .ig::before{content:"";width:16px;height:16px;border:1.6px solid currentColor;border-radius:5px;box-shadow:inset 0 0 0 2.4px var(--g950),inset 0 0 0 4px currentColor}@media (max-width:1100px){.foot-grid{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
+.foot img{height:48px;width:auto;margin-bottom:18px}
+.foot p,.foot a{color:var(--on-2);text-decoration:none}.foot a:hover{color:var(--on)}
+.foot ul{display:grid;gap:10px;list-style:none;align-content:start}
+.foot .wa{display:inline-flex;margin-top:22px}.foot a.btn-gold,.foot a.btn-gold:hover{color:var(--g950)}
+.foot .end{margin-top:64px;padding-top:24px;border-top:1px solid var(--frame);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.95rem;color:var(--on-2)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);z-index:90;background:var(--g950);color:var(--on);padding:12px 18px;border-radius:999px;font-size:.95rem;opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (max-width:900px){
+  .top nav{display:none}.burger{display:inline-grid;place-items:center}
+  .bhero{min-height:min(70vh,520px);align-items:flex-end}.bhero::after{background:linear-gradient(180deg,rgba(14,24,17,.35) 0%,rgba(14,24,17,.62) 45%,rgba(14,24,17,.9) 100%)}.bhero-grid>div:first-child{padding:120px 0 32px}
+  .cards{grid-template-columns:1fr 1fr;gap:22px 14px}.card h3{font-size:1.25rem}
+  .foot-grid{grid-template-columns:1fr}.foot{padding:56px 0 32px}
+}
+@media (max-width:600px){.cards{grid-template-columns:1fr}.bhead{flex-direction:column;align-items:start}.body{font-size:1rem}}
+/* LF-SEARCH */.top nav{gap:clamp(12px,1.5vw,24px)}.top nav a{white-space:nowrap}
+.srch-btn{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:999px;border:1px solid var(--line,#E2DCCB);background:transparent;color:inherit;cursor:pointer;margin-left:8px}.srch-btn:hover{background:rgba(0,0,0,.05)}
+.srch{position:fixed;inset:0;z-index:95;background:rgba(15,28,20,.42);backdrop-filter:blur(4px);display:flex;align-items:flex-start;justify-content:center;padding:clamp(70px,12vh,140px) 16px 16px}
+.srch[hidden]{display:none}.srch-box{width:min(680px,100%);background:#FBF7EE;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.3);overflow:hidden}
+.srch-row{display:flex;align-items:center;gap:8px;padding:10px 12px 10px 18px;border-bottom:1px solid #E6DEC9}.srch-row input{flex:1;border:0;background:transparent;font:inherit;font-size:1.1rem;color:#1B2A20;padding:10px 0;outline:none}
+.srch-x{width:38px;height:38px;border:0;border-radius:999px;background:transparent;font-size:1.6rem;line-height:1;cursor:pointer;color:#55635A}
+.srch-res{max-height:min(60vh,520px);overflow:auto}.srch-res a{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:10px 18px;text-decoration:none;color:#1B2A20;border-bottom:1px solid #F0EADA}
+.srch-res a:hover,.srch-res a.on{background:#F3EAD4}.srch-res img{width:52px;height:52px;object-fit:cover;border-radius:8px;background:#EEE6D0}.srch-res b{display:block;font-weight:500}.srch-res small{color:#55635A}.srch-res .pr{font-weight:500;white-space:nowrap}
+.srch-res .none{padding:22px 18px;color:#55635A}.srch-res mark{background:transparent;color:#2F5A3A;font-weight:500}
+@media (max-width:900px){.srch{padding:12px}.srch-row input{font-size:1rem}}
+/* /LF-SEARCH */
+/* LF-WA */.wa-fab{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25);transition:transform .2s}.wa-fab:hover{transform:scale(1.06)}@media (max-width:900px){.wa-fab{right:14px;bottom:14px;width:50px;height:50px}}/* /LF-WA */
+
+/* каталог */
+.chero{padding:clamp(40px,6vw,80px) 0 24px}
+.chero h1{font-size:clamp(2.6rem,5vw,4.4rem)}
+.chero p{color:var(--ink-2);max-width:62ch;margin:16px 0 0;padding:0;font-size:1.05rem}
+.chips{position:sticky;top:72px;z-index:20;background:var(--paper);padding:12px 0;border-bottom:1px solid var(--line)}
+.chips .wrap{display:flex;gap:6px 6px;flex-wrap:wrap;min-width:0;width:100%;margin:0}.chips .wrap::-webkit-scrollbar{display:none}.chips button{flex:none}
+.chips button{min-height:40px;padding:0 13px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:.95rem;cursor:pointer}
+.chips button.on{background:var(--g700);border-color:var(--g700);color:var(--on)}
+.chips{display:block}.chips .wrap.fbar{display:flex;align-items:center;justify-content:flex-end;gap:18px;font-size:.95rem;color:var(--ink-2);padding-top:10px}.fbar label{display:flex;align-items:center;gap:8px;white-space:nowrap}.fbar input[type=number]{width:64px;min-height:40px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:0 10px;font:inherit;color:var(--ink);text-align:center}.fbar input[type=number]::-webkit-outer-spin-button,.fbar input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.fbar input[type=number]{-moz-appearance:textfield}.fbar input[type=checkbox]{width:18px;height:18px;accent-color:var(--g700);margin:0}
+.chero .wrap,.chips .wrap,.wrap.cgrid{max-width:none}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr) clamp(300px,26vw,400px);gap:clamp(28px,4vw,56px);align-items:start;padding:32px var(--side) 80px}
+@media (min-width:1500px){.pcs{grid-template-columns:repeat(4,1fr)}}
+.pcs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 18px}
+.pc{display:flex;flex-direction:column}
+.pc.hide{display:none}
+.pc .pic{display:block;position:relative;aspect-ratio:3/4;border-radius:8px;overflow:hidden;background:var(--paper-2)}.pc .pic .bgimg{position:absolute;inset:-12%;width:124%;height:124%;object-fit:cover;filter:blur(22px) saturate(.85);opacity:.75;transform:none}.pc .pic .bgimg{display:none}.pc .pic img:not(.bgimg){position:relative;display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.pc .pic:hover img:not(.bgimg){transform:scale(1.03)}
+.pc h3{font-size:1.3rem;line-height:1.15;margin-top:14px}.pc h3 a{color:inherit;text-decoration:none}
+.pc p{color:var(--ink-2);font-size:.92rem;margin-top:6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:none}
+.pc .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:12px}
+.pc .vol{min-height:40px;border:1px solid #E3D8BF;border-radius:8px;background-color:#F4ECD9;cursor:pointer;padding:0 10px;font:inherit;font-size:.92rem;color:var(--ink);max-width:60%}
+.pc .vol1{color:var(--ink-2);font-size:.92rem}.pc .vol1:empty{display:none}
+.pc .price{font-weight:500;font-size:1.05rem;white-space:nowrap}
+.pc .add{margin-top:10px;min-height:44px;border-radius:999px;border:1px solid var(--g700);background:transparent;color:var(--g700);font:inherit;font-weight:500;cursor:pointer;transition:background .2s,color .2s}
+.pc .add:hover,.pc.has .add{background:var(--g700);color:var(--on)}
+.empty{grid-column:1/-1;color:var(--ink-2);padding:40px 0}
+/* корзина справа */.ship-pick{min-width:0}.shipsel{min-width:0;max-width:100%;box-sizing:border-box;text-overflow:ellipsis}
+.ship-pick{display:block;margin-top:14px;font-size:.9rem;color:var(--ink-2)}.ship-pick span{display:block;margin-bottom:6px}
+.shipsel{width:100%;min-height:42px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:0 10px;font:inherit;font-size:.92rem;color:var(--ink)}
+.box-ship{display:flex;justify-content:space-between;margin-top:10px;font-size:.95rem;color:var(--ink-2)}.box-ship b{font-weight:500;color:var(--ink)}
+.box-total{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 14px;font-size:1.05rem}.box-total strong{font-family:var(--serif);font-size:1.7rem;font-weight:400}
+.bag .shipsel,.bag .ship-pick span{color:var(--ink)}
+
+.box-side{position:sticky;top:96px;max-height:calc(100vh - 110px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}.box-side::-webkit-scrollbar{display:none}.box-side .bk{max-width:340px}
+.bk{position:relative;width:100%;aspect-ratio:1/.86;margin-top:10px}
+.bk-img,.bk-front{position:absolute;left:0;bottom:0;width:100%;height:auto;transform:scaleY(.9);transform-origin:50% 100%}.bk-img{filter:drop-shadow(0 18px 14px rgba(27,42,32,.22))}.bk-front{z-index:2}
+.bk-slots{position:absolute;inset:0;z-index:1}
+.bk .bt{position:absolute;bottom:20%;width:12.5%;height:50%;animation:land .7s var(--ease) both}
+.bk .bt img{display:block;width:100%;height:100%;object-fit:contain;object-position:50% 100%;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25))}
+.bk .bt.k-packl,.bk .bt.k-packg,.bk .bt.k-packt{width:27%;height:50%;bottom:26%}.bk .bt.k-jar{width:22%;height:48%;bottom:26%}.bk .bt.k-set{width:32%;height:50%;bottom:24%}.bk .bt.k-card{width:24%;height:46%;bottom:26%}.bk .bt.k-bottle{width:12.5%;height:50%}
+.bk .bt .minus{position:absolute;z-index:3;top:-8px;right:-10px;width:24px;height:24px;border-radius:999px;border:0;background:var(--paper);color:var(--ink);font-size:1rem;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 6px rgba(15,28,20,.3)}
+@keyframes land{0%{transform:translateY(-34px) scale(.94);opacity:0}65%{transform:translateY(4px) scale(1.01);opacity:1}100%{transform:none}}
+.bk-tag{position:absolute;z-index:3;right:7%;top:50%;width:34%;min-width:100px;max-width:160px;box-sizing:border-box;transform:rotate(-7deg);background:var(--paper);border:1px solid var(--gold);border-radius:5px;padding:3px 4px 2px;line-height:0;box-shadow:0 3px 8px rgba(27,42,32,.18)}.bk-tag img{width:100%;height:auto;display:block}
+
+.bk-more{position:absolute;z-index:3;left:6%;top:50%;background:var(--g950);color:var(--on);border-radius:999px;padding:4px 12px;font-size:.85rem}
+.box-cap{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;font-size:.95rem;color:var(--ink-2)}.box-cap b{color:var(--ink);font-weight:500}
+.box-bar{height:2px;background:rgba(27,42,32,.14);margin-top:8px;overflow:hidden;border-radius:2px}.box-bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .5s var(--ease)}
+.box-list{margin-top:10px;font-size:.92rem;color:var(--ink-2);line-height:1.5}
+.box-list li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);list-style:none}
+.box-list li>span:last-child{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;flex:none}.box-list li button{width:22px;height:22px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--g700);cursor:pointer;font:inherit;line-height:1;display:grid;place-items:center;padding:0}.box-list li button:hover{border-color:var(--g700)}
+.box-sum{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px;font-size:1.05rem}.box-sum strong{font-family:var(--serif);font-size:2rem;font-weight:400}
+.box-note{display:block;color:var(--ink-2);font-size:.9rem;margin:2px 0 14px}
+.box-side .btn{width:100%}.box-side .btn + .btn{margin-top:10px}
+.fly{position:fixed;z-index:90;width:54px;height:54px;border-radius:10px;object-fit:cover;pointer-events:none;box-shadow:0 10px 24px rgba(15,28,20,.3);transition:transform .75s cubic-bezier(.4,0,.2,1),opacity .2s .6s}.fly.ic{box-shadow:none;border-radius:0;object-fit:contain;width:60px;height:84px;background:none}
+@media (max-width:1100px){.pcs{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.cgrid{grid-template-columns:1fr 1fr;gap:24px}.pcs{grid-template-columns:1fr}}
+@media (max-width:600px){.cgrid{grid-template-columns:1fr;gap:12px}.pcs{grid-template-columns:1fr 1fr;gap:18px 12px}.pc h3{font-size:1.08rem}.pc .vol{max-width:100%}.pc .row{flex-direction:column;align-items:start}
+  .box-side{order:-1;position:sticky;top:124px;z-index:5;background:var(--paper);padding:4px 0 8px;border-bottom:1px solid var(--line)}
+  .box-side .bk{max-width:230px;margin:0 auto;aspect-ratio:1/.8}.box-side .box-list,.box-side .box-note,.box-side .btn,.box-side .box-sum,.box-side .ship-pick,.box-side .box-ship,.box-side .box-total{display:none}
+  .chips{top:72px;padding:8px 0}.chips .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chips .wrap::-webkit-scrollbar{display:none}.chips button{flex:none}.chips .wrap.fbar{padding:8px var(--side) 2px;gap:12px;overflow:visible;justify-content:flex-start}.fbar input[type=number]{width:56px;min-height:36px}
+  .box-side{top:128px}}
+/* LF-SEARCH */.top nav{gap:clamp(12px,1.5vw,24px)}.top nav a{white-space:nowrap}
+.srch-btn{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:999px;border:1px solid var(--line,#E2DCCB);background:transparent;color:inherit;cursor:pointer;margin-left:8px}.srch-btn:hover{background:rgba(0,0,0,.05)}
+.srch{position:fixed;inset:0;z-index:95;background:rgba(15,28,20,.42);backdrop-filter:blur(4px);display:flex;align-items:flex-start;justify-content:center;padding:clamp(70px,12vh,140px) 16px 16px}
+.srch[hidden]{display:none}.srch-box{width:min(680px,100%);background:#FBF7EE;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.3);overflow:hidden}
+.srch-row{display:flex;align-items:center;gap:8px;padding:10px 12px 10px 18px;border-bottom:1px solid #E6DEC9}.srch-row input{flex:1;border:0;background:transparent;font:inherit;font-size:1.1rem;color:#1B2A20;padding:10px 0;outline:none}
+.srch-x{width:38px;height:38px;border:0;border-radius:999px;background:transparent;font-size:1.6rem;line-height:1;cursor:pointer;color:#55635A}
+.srch-res{max-height:min(60vh,520px);overflow:auto}.srch-res a{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:10px 18px;text-decoration:none;color:#1B2A20;border-bottom:1px solid #F0EADA}
+.srch-res a:hover,.srch-res a.on{background:#F3EAD4}.srch-res img{width:52px;height:52px;object-fit:cover;border-radius:8px;background:#EEE6D0}.srch-res b{display:block;font-weight:500}.srch-res small{color:#55635A}.srch-res .pr{font-weight:500;white-space:nowrap}
+.srch-res .none{padding:22px 18px;color:#55635A}.srch-res mark{background:transparent;color:#2F5A3A;font-weight:500}
+@media (max-width:900px){.srch{padding:12px}.srch-row input{font-size:1rem}}
+/* /LF-SEARCH */
+/* LF-WA */.wa-fab{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25);transition:transform .2s}.wa-fab:hover{transform:scale(1.06)}@media (max-width:900px){.wa-fab{right:14px;bottom:14px;width:50px;height:50px}}/* /LF-WA */
+.srch-f input{width:100%;max-width:260px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;font:inherit;background:#fff}@media (max-width:900px){.srch-f{width:100%}.srch-f input{max-width:none}}
+/* карточка товара */
+.crumbs{padding:28px var(--side) 0;font-size:.92rem;color:var(--ink-2)}.crumbs a{color:inherit;text-decoration:none}.crumbs a:hover{color:var(--g700)}.crumbs span{margin:0 8px;opacity:.6}
+.pgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);grid-template-rows:auto auto;gap:clamp(28px,5vw,64px);align-items:start;padding:20px var(--side) 80px}.pgrid .gal{grid-column:1;grid-row:1}.pgrid .ptext{grid-column:1;grid-row:2;margin-top:0}.pgrid .box-side{grid-column:2;grid-row:1/3}
+.gal{display:grid;grid-template-columns:1fr;gap:10px}
+.gal .main{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:var(--paper-2)}.gal .main .bgimg{position:absolute;inset:-12%;width:124%;height:124%;object-fit:cover;filter:blur(24px) saturate(.85);opacity:.75}.gal .main .bgimg{display:none}.gal .main img:not(.bgimg){position:relative;width:100%;height:100%;object-fit:cover;display:block}
+.gal .thumbs{display:flex;gap:8px}.gal .thumbs button{width:72px;height:60px;border-radius:6px;overflow:hidden;border:2px solid transparent;padding:0;background:var(--paper-2);cursor:pointer}
+.gal .thumbs button.on{border-color:var(--g700)}.gal .thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.ptitle{margin-top:0}.ptitle h1{font-size:clamp(2rem,3.6vw,3rem);line-height:1.08}
+.pc .ptitle .lead{display:block;-webkit-line-clamp:unset;overflow:visible;flex:none;color:var(--ink-2);margin-top:12px;font-size:1.05rem;max-width:62ch}
+.ptext{margin-top:32px;max-width:66ch;line-height:1.6}
+.req{color:#B8862B;font-style:normal}.form input.bad{border-color:#9B3B2E}.phone-row{display:flex;align-items:center;gap:8px}.phone-row .cc{padding:0 10px;color:var(--ink-2);white-space:nowrap}.form .phone-row select.cc{width:auto;flex:0 0 auto;max-width:48%;margin-top:6px;padding:10px 8px;color:var(--ink)}.phone-row input{flex:1}
+.promo-f{margin:12px 0 4px}.promo-f label{display:block;font-size:.92rem;color:var(--ink-2)}.promo-row{display:flex;gap:8px;margin-top:6px}.promo-row input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;text-transform:uppercase}.promo-row .btn{min-height:42px;padding:0 14px;white-space:nowrap}.sum .promo-row .btn{width:auto;flex:none;margin-top:0}.sum .promo-row input{background:#fff}.sum .line[hidden]{display:none!important}
+.rv-link{margin-top:10px;width:100%;display:flex!important;min-height:46px}
+.reviews{padding:40px var(--side) 20px}.rv-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:22px}.rv-head h2{margin:4px 0 0}.rv-head .hint{max-width:46ch;margin:0}
+.rv-list{display:grid;gap:14px;margin-bottom:28px}.rv-item{padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:#fff}.rv-top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:.92rem;color:var(--ink-2);margin-bottom:8px}.rv-top b{color:var(--ink);font-weight:500}.rv-stars{color:#C9A45C;letter-spacing:1px}.rv-stars i{color:#D8D2C2;font-style:normal}.rv-item p{margin:0;line-height:1.55}.rv-empty{color:var(--ink-2)}
+.rv-form{max-width:640px;padding:22px 22px 26px;border:1px solid var(--line);border-radius:14px;background:#fff}.rv-form h3{margin:0 0 14px;font-family:var(--sans);font-weight:500;font-size:1.15rem}.rv-form label{display:block;margin-bottom:12px;font-size:.92rem;color:var(--ink-2)}.rv-form input,.rv-form textarea{display:block;width:100%;margin-top:6px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;color:var(--ink);background:#FBF7EE}.rv-form input[readonly]{background:#F3EFE4}.rv-form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media (max-width:600px){.rv-form .two{grid-template-columns:1fr}}
+.stars{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:2px;margin:4px 0 14px}.stars input{position:absolute;opacity:0;width:0;height:0}.stars label{font-size:1.9rem;color:#D8D2C2;cursor:pointer;line-height:1}.stars input:checked~label,.stars label:hover,.stars label:hover~label{color:#C9A45C}.rv-err{min-height:1.2em;font-size:.92rem;color:#9B3B2E;margin-bottom:8px}
+.ptext h3{font-size:1.15rem;margin:24px 0 8px;font-weight:500;font-family:var(--sans)}
+.ptext p{margin:0 0 12px;color:var(--ink)}.ptext ul{margin:0 0 12px;padding-left:0;list-style:none}
+.ptext li{position:relative;padding-left:18px;margin:4px 0}.ptext li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.ptext a{color:var(--g700)}
+.spec{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.spec span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem;color:var(--ink-2)}
+.buy{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}
+.buy .price{font-family:var(--serif);font-size:2.2rem;font-weight:400}.buy .old{color:var(--ink-2);text-decoration:line-through;font-size:1rem;margin-left:8px}
+.buy .row{margin-top:12px}.buy .vol{max-width:100%;min-width:140px}
+.buy .add{width:100%}
+.buy .pay-note{display:block;color:var(--ink-2);font-size:.86rem;margin-top:10px}
+.also{padding:0 0 80px}.also h2{font-size:1.8rem;margin-bottom:20px}
+.also .pcs{grid-template-columns:repeat(4,1fr);align-items:start}
+.video{display:inline-flex;align-items:center;gap:8px;margin-top:10px;color:var(--g700);text-decoration:none;font-size:.95rem}.video::before{content:"▶";font-size:.7rem}
+@media (max-width:820px){.pgrid{grid-template-columns:1fr 1fr;gap:24px}.pgrid .ptext{grid-column:1/-1;grid-row:2}.pgrid .box-side{grid-row:1}.also .pcs{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.pgrid{grid-template-columns:1fr;grid-template-rows:none;gap:16px}.pgrid .gal,.pgrid .ptext,.pgrid .box-side{grid-column:1;grid-row:auto}.pgrid .ptext{order:3}.box-side .buy{display:block}.box-side .box-sum,.box-side .btn,.box-side .box-list,.box-side .box-note,.box-side .ship-pick,.box-side .box-ship,.box-side .box-total{display:none}
+  .box-side{order:0;position:static;background:none;border:0;padding:0}.box-side .bk{display:none}.box-side .box-cap,.box-side .box-bar{display:none}
+  .also .pcs{grid-template-columns:1fr 1fr}.gal .main{aspect-ratio:3/4}}
+/* заказ */
+.ogrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,64px);align-items:start;padding:24px var(--side) 80px}
+.ohero{padding:clamp(32px,5vw,60px) var(--side) 0}.ohero h1{font-size:clamp(2.2rem,4vw,3.4rem)}
+.form h2{font-size:1.4rem;margin:28px 0 12px;font-weight:500;font-family:var(--sans)}.form h2:first-child{margin-top:0}
+.form label{display:block;margin-top:12px;font-size:.92rem;color:var(--ink-2)}.form .hint{display:block;color:var(--ink-2);font-size:.86rem;margin-top:6px}
+.form input,.form select,.form textarea{width:100%;min-height:46px;margin-top:6px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink);box-sizing:border-box}
+.form textarea{min-height:80px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opts{display:grid;gap:8px;margin-top:8px}
+.form .opt{display:flex;margin-top:0;font-size:1rem;color:var(--ink);align-items:center;gap:12px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:#fff;cursor:pointer}
+.opt input{width:auto;min-height:0;margin:0}.opt b{font-weight:500}.opt small{display:block;color:var(--ink-2);font-size:.86rem}.opt .r{margin-left:auto;white-space:nowrap;font-weight:500}
+.opt:has(input:checked){border-color:var(--g700);box-shadow:0 0 0 1px var(--g700) inset}
+.card-fields{margin-top:10px;padding:14px;border:1px dashed var(--line);border-radius:10px;background:var(--paper-2)}
+
+.bonus-box{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff;margin-bottom:22px}.seg{display:flex;gap:6px;padding:4px;border-radius:999px;background:var(--paper-2);margin-bottom:14px}.seg button{flex:1;min-height:40px;border:0;border-radius:999px;background:transparent;font:inherit;font-weight:500;color:var(--ink-2);cursor:pointer;transition:background .25s,color .25s}.seg button.on{background:var(--g700);color:#fff}.bonus-login{margin-top:0;padding-top:0;border-top:0}.bonus-login[hidden],#segNew[hidden]{display:none}
+.bonus-box p{margin:0 0 12px;color:var(--ink-2);line-height:1.5}
+.bonus-btns{display:flex;gap:10px;flex-wrap:wrap}.bonus-btns .btn{min-height:44px;padding:0 20px}
+.bonus-login{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:4px}.bonus-login .btn{justify-self:start;margin-top:10px;min-height:44px}
+.bonus-hello{font-size:.95rem}.linkbtn{border:0;background:none;color:var(--g700);cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+.bonus-bal{display:flex;justify-content:space-between;align-items:baseline;padding:12px 14px;border-radius:10px;background:var(--paper-2);margin-bottom:12px}.bonus-bal strong{font-family:var(--serif);font-size:1.6rem;font-weight:400;color:var(--g700)}
+.bonus-use{margin-top:0}
+.bonus-amt{margin-top:12px}.bonus-amt input[type=range]{width:100%;margin-top:10px;accent-color:var(--g700)}
+.bonus-line span:last-child{color:var(--g700);font-weight:500}
+.sum{border:1px solid var(--line);border-radius:12px;padding:20px;background:#fff;position:sticky;top:120px}
+.sum h3{font-size:1.2rem;margin-bottom:10px}
+.sum .box-list li{padding:8px 0}
+.sum .line{position:static;width:auto;background:none;border-radius:0;display:flex;justify-content:space-between;padding:8px 0;color:var(--ink-2);font-size:.95rem}
+.sum .tot{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);margin-top:8px;padding-top:12px;font-size:1.05rem}.sum .tot strong{font-family:var(--serif);font-size:2rem;font-weight:400}
+.sum .btn{width:100%;margin-top:16px}
+.secure{display:block;margin-top:10px;color:var(--ink-2);font-size:.86rem;text-align:center}
+.done{text-align:center;padding:60px 0 100px;max-width:56ch;margin:0 auto}.done .ok{width:72px;height:72px;border-radius:50%;background:var(--g700);color:var(--on);display:grid;place-items:center;font-size:2rem;margin:0 auto 20px}
+.done h1{font-size:2.2rem}.done p{color:var(--ink-2);margin-top:12px;line-height:1.6}
+@media (max-width:820px){.ogrid{grid-template-columns:minmax(0,1fr)}.sum .line{display:flex}.sum{position:static}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="../index.html" aria-label="Live Food, на главную"><img src="../img/logo-green.png" alt="Live Food Premium" width="108" height="40"></a>
+  <nav aria-label="Главное меню"><a href="../index.html#story">О нас</a><a href="index.html" class="on">Каталог</a><a href="../index.html#sets">Наборы</a><a href="p279492514602.html">Курсы</a><a href="../blog/index.html#recipes">Рецепты</a><a href="../index.html#bonus">Бонусная программа</a><a href="../index.html#ship">Доставка</a><a href="kontakty.html">Контакты</a><a href="../blog/index.html">Наш Блог</a></nav>
+  <button class="srch-btn" id="srchBtn" type="button" aria-label="Поиск по товарам"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button><button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+</div></header>
+<div class="menu" id="menu" role="dialog" aria-label="Меню"><button class="x" id="menuX" type="button" aria-label="Закрыть меню">×</button><a href="../index.html#story">О нас</a><a href="index.html">Каталог</a><a href="../index.html#sets">Наборы</a><a href="p279492514602.html">Курсы</a><a href="../blog/index.html#recipes">Рецепты</a><a href="../index.html#bonus">Бонусная программа</a><a href="../index.html#ship">Доставка</a><a href="kontakty.html">Контакты</a><a href="../blog/index.html">Наш Блог</a></div>
+<div class="srch" id="srch" hidden><div class="srch-box" role="dialog" aria-label="Поиск по товарам"><div class="srch-row"><input type="search" id="srchIn" placeholder="Что ищете? Например: горчица, лён, смесь" autocomplete="off" aria-label="Поиск"><button class="srch-x" id="srchX" type="button" aria-label="Закрыть">×</button></div><div class="srch-res" id="srchRes"></div></div></div><script>window.LF_SEARCH_BASE="";window.LF_INDEX=[{"u": "519291389183", "n": "Набор: касторовое масло, масло расторопши и жмых расторопши", "s": "Наборы", "k": "Набор из трёх продуктов холодного отжима семян расторопши и клещевины — касторовое масло, масло расторопши и жмых расторопши. Подходит для у", "p": 30.0, "v": ""}, {"u": "763913991792", "n": "Акция. Любые 5 масел по 100 мл за 40€", "s": "Наборы", "k": "Хотите попробовать разные масла и найти свои любимые вкусы? Мы подготовили специальное предложение: выберите любые 5 масел по 100 мл всего з", "p": 40.0, "v": ""}, {"u": "399847310673", "n": "Дегустационный сет «Три масла. База» — льняное, кунжутное и тыквенное масло холодного отжима", "s": "Наборы", "k": "Дегустационный сет из трёх масел холодного отжима — льняного, кунжутного и тыквенного, каждое со своим ярким вкусом. Мягкий ореховый лён, на", "p": 25.0, "v": "100мл"}, {"u": "485747769923", "n": "Дегустационный сет «Триада» — льняное, конопляное и горчичное масло холодного отжима", "s": "Наборы", "k": "Дегустационный сет из трёх масел холодного отжима — льняного, конопляного и горчичного, каждое со своим характером и вкусом. Мягкий ореховый", "p": 25.0, "v": "100мл"}, {"u": "289549627573", "n": "Дегустационный сет «Баланс» — масло расторопши, льняное и конопляное масло холодного отжима", "s": "Наборы", "k": "Дегустационный сет из трёх масел холодного отжима — расторопши, льняного и конопляного, каждое с мягким, деликатным вкусом и своей ореховой ", "p": 25.0, "v": "100мл"}, {"u": "188788326133", "n": "Дегустационный сет «Для разнообразия» (детский рацион)", "s": "Наборы", "k": "Дегустационный сет из трёх масел холодного отжима — кунжутного, тыквенного и масла грецкого ореха — с мягким ореховым вкусом, подходящим для", "p": 25.0, "v": "100мл"}, {"u": "282135015983", "n": "Универсальное кокосовое масло с амарантом", "s": "Масла", "k": "Натуральная композиция из кокосового (80%) и амарантового (20%) масел холодного отжима — нежная кремовая текстура, без рафинации, дезодораци", "p": 9.5, "v": ""}, {"u": "867334424832", "n": "Амарантовый протеин 350 гр", "s": "Другое", "k": "Амарантовый протеин — обезжиренный концентрат растительного белка из семян амаранта, получаемый после холодного отжима масла. Обладает мягки", "p": 6.0, "v": ""}, {"u": "749862900083", "n": "6 бутылок Энзимного напитка Ферментум за 50€", "s": "Ферментум", "k": "Fermentum — живой ферментированный напиток из свежих овощей и фруктов с добавлением имбиря и щепотки каенского перца, прошедший естественную", "p": 50.0, "v": ""}, {"u": "364363783332", "n": "Амарантовое масло холодного отжима 50 мл.", "s": "Масла", "k": "Амарантовое масло холодного отжима — редкое масло с мягким ореховым вкусом, для получения которого требуется большое количество семян и дели", "p": 16.5, "v": ""}, {"u": "692650991382", "n": "Масло кедрового ореха", "s": "Масла", "k": "Масло кедрового ореха — сыродавленное и нефильтрованное, с насыщенным вкусом и характерным ароматом сибирского кедра. Традиционный продукт с", "p": 25.0, "v": "100 мл"}, {"u": "179070525352", "n": "Сыворотка с сенной палочкой (Bacillus subtilis)", "s": "Другое", "k": "Сыворотка с сенной палочкой (Bacillus subtilis) — живая культура одной из самых изученных бактерий, которую мы используем как основу для дом", "p": 25.0, "v": ""}, {"u": "274753542822", "n": "Масло Грецкого ореха", "s": "Масла", "k": "Масло грецкого ореха холодного отжима — с насыщенным ореховым вкусом и ароматом, без фильтрации и добавок. Благодаря тонкому вкусу подходит ", "p": 10.0, "v": "100 мл"}, {"u": "996009651222", "n": "Льняное масло", "s": "Масла", "k": "Льняное масло холодного отжима, с бережным сохранением природных свойств семян и высоким содержанием ненасыщенных жиров (90%). Без нагрева и", "p": 9.0, "v": "100 мл"}, {"u": "491354051682", "n": "Конопляное масло", "s": "Масла", "k": "Конопляное масло холодного отжима, из тщательно очищенных семян, без нагрева и добавок, с высоким содержанием ненасыщенных жиров (90%). Насы", "p": 10.0, "v": "100 мл"}, {"u": "282034683392", "n": "Горчичное масло", "s": "Масла", "k": "Горчичное масло холодного отжима — насыщенный, острый вкус отборных семян горчицы, популярный в индийской и азиатской кухне. Получено без на", "p": 10.0, "v": "100 мл"}, {"u": "302186820692", "n": "Масло черного тмина", "s": "Масла", "k": "Масло чёрного тмина имеет насыщенный вкус и характерный аромат, свойственный семенам чёрного тмина. Получено методом холодного отжима, без н", "p": 13.0, "v": "100 мл"}, {"u": "406221972012", "n": "Кунжутное масло", "s": "Масла", "k": "Кунжутное масло — сыродавленное, холодного отжима, с приятным ореховым вкусом и высоким содержанием ненасыщенных жиров (84%). Одно из древне", "p": 9.0, "v": "100 мл"}, {"u": "622829657382", "n": "Масло Расторопши", "s": "Масла", "k": "Масло расторопши получают методом холодного отжима без рафинации, с бережным сохранением природных свойств семян. Универсальное масло — подх", "p": 10.0, "v": "100 мл"}, {"u": "198101252252", "n": "Миндальное масло", "s": "Масла", "k": "Свежевыжатое миндальное масло — натуральный продукт холодного отжима с мягким ореховым вкусом и высоким содержанием ненасыщенных жиров (91%,", "p": 11.0, "v": "100 мл"}, {"u": "668757782952", "n": "Подсолнечное масло", "s": "Масла", "k": "Подсолнечное масло — нерафинированное, холодного отжима, с насыщенным натуральным вкусом. Используется в салатах, кашах, овощных и злаковых ", "p": 10.0, "v": "250 мл"}, {"u": "529988086202", "n": "Оливковое масло", "s": "Масла", "k": "Оливковое масло производится из свежих оливок с семейных плантаций на юге Испании, закупаемых напрямую у фермеров. Подходит для салатов, пас", "p": 11.0, "v": "250 мл"}, {"u": "535521443502", "n": "Касторовое масло", "s": "Масла", "k": "Касторовое масло холодного отжима — 100% натуральный продукт для ухода за кожей, волосами, ресницами и бровями, с мягким смягчающим действие", "p": 8.0, "v": "100 мл"}, {"u": "572482304372", "n": "Тыквенное масло", "s": "Масла", "k": "Тыквенное масло холодного отжима — глубокий орехово-семечковый вкус и аромат, без нагрева и добавок, с высоким содержанием ненасыщенных жиро", "p": 11.0, "v": "100 мл"}, {"u": "731384747322", "n": "Кокосовое масло", "s": "Масла", "k": "Кокосовое масло первого холодного отжима получают из свежей мякоти кокоса, без нагрева и добавок, с нежным тропическим ароматом. При низкой ", "p": 10.0, "v": "200 г"}, {"u": "633501253922", "n": "Масло ГХИ", "s": "Масла", "k": "Органическое топлёное масло ГХИ готовится по традиционной технологии медленного томления, с тонким ореховым ароматом. Не содержит лактозу и ", "p": 12.5, "v": "300 мл"}, {"u": "548433647082", "n": "Оливковое масло extra virgin с чесноком и пеперончино 250 мл", "s": "Масла", "k": "Оливковое масло extra virgin настаивается на свежем чесноке и перце пеперончино — вкус насыщенный, тёплый, с мягкой пикантностью. Хорошо под", "p": 16.0, "v": ""}, {"u": "333838889952", "n": "Оливковое масло extra virgin со вкусом трюфеля 250 мл", "s": "Масла", "k": "Трюфельное масло — оливковое масло extra virgin с ароматом трюфеля, нефильтрованное, произведённое небольшими партиями на семейной фабрике в", "p": 16.0, "v": ""}, {"u": "862756064522", "n": "Оливковое масло extra virgin с лимоном 250 мл", "s": "Масла", "k": "Оливковое масло первого холодного отжима с лимоном: оливки перерабатывают вместе с лимоном, вкус получается свежим, лёгким, с чистой цитрусо", "p": 16.0, "v": ""}, {"u": "283760387662", "n": "Оливковое масло extra virgin с базиликом 250 мл", "s": "Масла", "k": "Оливковое масло extra virgin с базиликом создаётся путём совместной переработки свежих оливок и базилика — вкус тёплый, травяной, мягкий и у", "p": 16.0, "v": ""}, {"u": "722411549632", "n": "Оливковое масло extra virgin с кайенским перцем 250 мл", "s": "Масла", "k": "Оливковое масло extra virgin с кайенским перцем — яркое, насыщенное, с выраженной остротой и чётким характером. Свежие оливки и кайенский пе", "p": 16.0, "v": ""}, {"u": "780048347542", "n": "Оливковое масло extra virgin с розмарином 250 мл", "s": "Масла", "k": "Оливковое масло extra virgin с розмарином: свежие оливки перерабатывают вместе с листьями розмарина, вкус насыщенный, травяной, с глубоким и", "p": 16.0, "v": ""}, {"u": "480225580022", "n": "Набор из пяти оливковых масел extra virgin, 250 мл", "s": "Масла", "k": "Набор из пяти оливковых масел extra virgin по 250 мл — с розмарином, кайенским перцем, лимоном, базиликом и чесноком, каждое со своим ярким ", "p": 60.0, "v": ""}, {"u": "480729671032", "n": "Набор оливковых масел extra virgin из 5 вкусов по 100 мл.", "s": "Масла", "k": "Набор из пяти оливковых масел extra virgin по 100 мл — с розмарином, кайенским перцем, лимоном, базиликом и чесноком, каждое со своим ярким ", "p": 35.0, "v": ""}, {"u": "647018471002", "n": "Клетчатка «Основа» 350 гр", "s": "Другое", "k": "Клетчатка из шелухи псиллиума (60%), молотого льна, расторопши и кунжута — натуральная смесь, которая при контакте с водой образует мягкий г", "p": 16.0, "v": ""}, {"u": "818567453162", "n": "Balance Cracker Mix Баланс Крекер Микс 350 гр", "s": "Другое", "k": "Натуральная смесь семян для приготовления домашних кето-крекеров", "p": 6.5, "v": ""}, {"u": "203925928862", "n": "Жмых кедрового ореха (250 гр)", "s": "Жмыхи", "k": "Жмых кедрового ореха остаётся после холодного отжима масла, сохраняя приятный ореховый вкус и лёгкую рассыпчатую текстуру — хорошо сочетаетс", "p": 10.0, "v": ""}, {"u": "666799265562", "n": "Ферментированная японская слива ShareOriginal", "s": "Другое", "k": "Ферментированная японская слива проходит 30 месяцев естественной ферментации в собственном соку, приобретая лёгкую сладость, тонкую кислинку", "p": 3.0, "v": ""}, {"u": "950935124682", "n": "Протеиновая смесь (350 гр)", "s": "Смеси", "k": "Протеиновая смесь из конопли, кунжута и льна холодного отжима — 60% состава занимают ядра и мука конопли, с насыщенным ореховым вкусом и лёг", "p": 12.5, "v": ""}, {"u": "898174792792", "n": "Корень Цикория (250 гр)", "s": "Чай", "k": "Цикорий — обжаренный и тонко измельчённый корень цикория, обладающий мягким, слегка горьковатым вкусом, напоминающим кофе, но без кофеина. 1", "p": 14.5, "v": ""}, {"u": "749332696102", "n": "Набор \"Женский баланс\"", "s": "Наборы", "k": "Сбор «Женский баланс» объединяет мелиссу, семена тмина и фенхеля — травы с ароматным, мягким вкусом: свежая лимонная нотка мелиссы, тёплая г", "p": 10.0, "v": ""}, {"u": "983290646422", "n": "Набор «Сила изнутри» — ритуал заботы о себе для мужчин", "s": "Наборы", "k": "Набор «Сила изнутри» — четыре масла холодного отжима, подобранные специально для мужчин как часть ежедневного ритуала заботы о себе. Чёрный ", "p": 38.0, "v": "100мл"}, {"u": "598636833742", "n": "Набор для Абхиянги — аюрведический ритуал самомассажа маслом", "s": "Наборы", "k": "Набор для Абхиянги объединяет четыре масла холодного отжима — кунжутное, оливковое, кокосовое и касторовое — для традиционного аюрведическог", "p": 110.0, "v": ""}, {"u": "306852598802", "n": "Набор «Женская забота» — ритуал заботы о себе для женщин", "s": "Наборы", "k": "Набор «Женская забота» объединяет четыре масла холодного отжима — расторопши, тыквы, льна и кунжута, каждое со своим характером и неповторим", "p": 40.0, "v": "100мл"}, {"u": "279492514602", "n": "Обучающий курс по промасливанию (Абхиянга) от Live Food", "s": "Курсы", "k": "Видеокурс по Абхиянге — подробная видеоинструкция по древней аюрведической практике масляного самомассажа тела и волос. Пошаговый разбор рит", "p": 30.0, "v": ""}, {"u": "176813889992", "n": "Фруктовый Ферментум", "s": "Ферментум", "k": "Ферментум — ферментированный напиток на основе мёда, фруктов, ягод и овощей. В составе цитрусы, яблоко, груша, банан, кайенский перец и имби", "p": 15.0, "v": "1 л"}, {"u": "874163127822", "n": "Овощной Ферментум", "s": "Ферментум", "k": "Овощной Ферментум — ферментированный напиток на основе овощей, зелени, специй и трав. В составе свёкла, сельдерей, томаты, чеснок, зелень, и", "p": 15.0, "v": "1 л"}, {"u": "664836352072", "n": "Ферментированный жмых", "s": "Ферментум", "k": "Закваска для домашнего Ферментума — ферментированный, тщательно отжатый жмых с характерным кислым вкусом натурального брожения. Используйте ", "p": 20.0, "v": ""}, {"u": "787284000792", "n": "TE CHAI — пряный чёрный чай по аюрведическому рецепту", "s": "Чай", "k": "TE CHAI — пряный чай по традиционному аюрведическому рецепту: чёрный чай с корицей, кардамоном, гвоздикой, бадьяном, чёрным перцем, имбирём ", "p": 6.5, "v": "50gr"}, {"u": "969945549562", "n": "Мелисса (трава)", "s": "Чай", "k": "Трава мелиссы (Melissa officinalis) — травяной чай со свежим лимонным ароматом и мягким, слегка мятным вкусом, издавна известный в травяных ", "p": 5.0, "v": "100gr"}, {"u": "634686410372", "n": "Семена тмина", "s": "Семена", "k": "Семена тмина (Carum carvi) — пряность с тёплым, слегка горьковатым и анисовым вкусом, издавна известная в кулинарии разных стран. Добавляйте", "p": 5.0, "v": "100gr"}, {"u": "391698762912", "n": "Семена фенхеля", "s": "Семена", "k": "Семена фенхеля (Foeniculum vulgare) — ароматная пряность со сладковатым, слегка анисовым вкусом и насыщенным пряным ароматом, издавна извест", "p": 5.0, "v": "100gr"}, {"u": "739309250682", "n": "Сенна (Cassia angustifolia)", "s": "Травы", "k": "Трава сенны (Cassia angustifolia) собрана вручную и аккуратно высушена, без обработки и добавок. Традиционное растение из травяных сборов — ", "p": 5.0, "v": "50gr"}, {"u": "267542218242", "n": "Иван-чай ферментированный из украинских Карпат (50г)", "s": "Чай", "k": "Иван-чай (кипрей узколистный) собран вручную в украинских Карпатах, вдали от дорог, и прошёл традиционную ферментацию, раскрывающую глубокий", "p": 5.5, "v": ""}, {"u": "288009240992", "n": "Цитрусовый мед с забрусом", "s": "Мёд", "k": "Цитрусовый мёд с забрусом собирают в регионе, где круглый год цветут апельсиновые и лимонные деревья — мёд нефильтрованный, без подогрева, с", "p": 5.0, "v": "200 г"}, {"u": "436205789682", "n": "Ферментированная соль", "s": "Соль", "k": "Ферментированная соль — гималайская соль с ферментированными кайенским перцем, свёклой, имбирём и чесноком. Вкус насыщенный и глубокий, без ", "p": 5.0, "v": "100 г"}, {"u": "120272167082", "n": "Смесь \"Универсальная\"", "s": "Смеси", "k": "Универсальная смесь — это жмых тыквенных, льняных, кунжутных и конопляных семян с чиа, миндалём и псилиумом, без муки и глютена. Подходит дл", "p": 9.0, "v": "500 г"}, {"u": "795517100522", "n": "Розовая гималайская соль", "s": "Соль", "k": "Розовая гималайская соль добывается вручную в предгорьях Гималаев — там, где миллионы лет назад находилось древнее морское дно. Нежный розов", "p": 5.5, "v": ""}, {"u": "526055384922", "n": "Цитрусовая соль", "s": "Соль", "k": "Цитрусовая соль — гималайская соль, обогащённая цедрой лимона и апельсина с лимонным соком, без искусственных добавок. Придаёт блюдам свежий", "p": 5.0, "v": "100 г"}, {"u": "772607692612", "n": "Жмых бурого кунжута", "s": "Жмыхи", "k": "Жмых из бурого кунжута — ароматный, нежный продукт после холодного отжима масла из цельных семян, без нагрева и добавок. Приятный ореховый в", "p": 3.0, "v": "400 г"}, {"u": "659284414902", "n": "Горчичный жмых", "s": "Жмыхи", "k": "Горчичный жмых — побочный продукт холодного отжима горчичного масла из вручную отобранных семян, без термической обработки и добавок. Исполь", "p": 3.0, "v": "300 г"}, {"u": "719425705452", "n": "Жмых Льна", "s": "Жмыхи", "k": "Льняной жмых — это обезжиренные молотые семена льна, которые остаются после получения льняного масла методом холодного отжима. Мы используем", "p": 3.0, "v": "400 г"}, {"u": "888535199342", "n": "Жмых расторопши", "s": "Жмыхи", "k": "Жмых расторопши — побочный продукт холодного отжима масла расторопши, без нагрева и химической обработки. Универсальный продукт для ежедневн", "p": 5.0, "v": "400 г"}, {"u": "762769409402", "n": "Жмых черного тмина", "s": "Жмыхи", "k": "Жмых чёрного тмина остаётся после холодного отжима масла из семян чёрного тмина, без нагрева и химикатов — с лёгким пряно-горьковатым вкусом", "p": 3.0, "v": "200 г"}, {"u": "553411769682", "n": "Салатная смесь с ферментированной солью", "s": "Смеси", "k": "Салатная смесь с ферментированной солью — чистый продукт без искусственных добавок, который сделает салат еще вкуснее. В составе семена льна", "p": 6.5, "v": "250 г"}, {"u": "518038798682", "n": "Салатная смесь", "s": "Смеси", "k": "Салатная смесь — вкусное дополнение к ежедневному питанию, в составе семена тыквы, подсолнечника, кунжута и льна. Высокое содержание белка и", "p": 6.5, "v": "350 г"}, {"u": "619695696222", "n": "Кокосовая мука", "s": "Мука", "k": "Кокосовая мука — продукт, получаемый после холодного отжима масла из мякоти кокоса, с приятным ароматом и нежной текстурой. Без глютена — на", "p": 4.0, "v": "400 г"}, {"u": "885436117692", "n": "Льняная мука", "s": "Мука", "k": "Льняная мука — результат холодного отжима масла из цельных семян льна, жмых измельчается в тонкую натуральную муку с лёгким ореховым вкусом.", "p": 4.0, "v": "500 г"}, {"u": "614513575162", "n": "Кунжутная мука", "s": "Мука", "k": "Кунжутная мука — тонкая, рассыпчатая мука, полученная после холодного отжима масла из семян кунжута. Добавляйте в выпечку, соусы, супы, смуз", "p": 4.0, "v": "400 г"}, {"u": "425517559392", "n": "Мука расторопши", "s": "Мука", "k": "Мука расторопши — тонкая, рассыпчатая мука, полученная после холодного отжима масла из семян расторопши. Добавляйте в каши, смузи, йогурты и", "p": 4.0, "v": "400 г"}, {"u": "144028617322", "n": "Тыквенная мука", "s": "Мука", "k": "Тыквенная мука — тонкая, рассыпчатая мука холодного отжима из семян тыквы, с насыщенным ореховым вкусом, ароматом и характерным зеленоватым ", "p": 4.0, "v": "400 г"}, {"u": "542530352592", "n": "Коноплянная мука", "s": "Мука", "k": "Конопляная мука — тонкая, рассыпчатая мука, получаемая после холодного отжима масла из семян конопли. Добавляйте в каши, смузи, йогурты и вы", "p": 4.0, "v": "400 г"}, {"u": "497629657172", "n": "Миндальная мука", "s": "Мука", "k": "Миндальная мука — тонкая, нежная мука из миндальных орехов после холодного отжима масла, с мягким ореховым вкусом и ароматом. Без глютена — ", "p": 4.0, "v": "400 г"}, {"u": "829201881682", "n": "Мука из грецкого ореха", "s": "Мука", "k": "Мука из грецкого ореха — натуральный продукт, получаемый после холодного отжима масла, с насыщенным вкусом и нежной текстурой. Без глютена —", "p": 6.0, "v": "400 г"}, {"u": "975696417072", "n": "Quantum Beauty — набор для прохождения протокола клеточного обновления", "s": "Наборы", "k": "Набор Quantum Beauty создан для мягкого запуска процессов аутофагии, клеточного обновления и восстановления женской гармонии. Он сочетает ма", "p": 55.0, "v": ""}, {"u": "611449405162", "n": "Quantum Beauty — мягкий детокс и перезапуск женского организма без диет и истощения.", "s": "Наборы", "k": "Quantum Beauty — это 5-дневный протокол клеточного обновления, созданный на основе научных исследований USC и NASA. Он мягко имитирует голод", "p": 55.0, "v": ""}, {"u": "900289507322", "n": "Набор «База здоровья и ухода» от Live Food", "s": "Наборы", "k": "Комплексный набор для ежедневного восстановления организма и ухода за собой. Внутри — свежие масла холодного отжима, суперфуды и аюрведическ", "p": 43.0, "v": ""}, {"u": "996866746072", "n": "Система замасливания и очищения организма Live Food", "s": "Наборы", "k": "Готовая система ежедневных ритуалов для тех, кто хочет начать заботиться о себе просто, красиво и без перегрузки.", "p": 39.0, "v": ""}, {"u": "217867182663", "n": "Школьный старт от Live Food", "s": "Наборы", "k": "Натуральные продукты для разнообразного питания ребёнка и всей семьи. Специальная акция к началу учебного года с 1 по 5 сентября", "p": 50.0, "v": ""}, {"u": "622458625093", "n": "Масло Ghee — натуральное топлёное масло для ежедневного приготовления", "s": "Масла", "k": "это традиционное топлёное сливочное масло, из которого в процессе приготовления удаляются вода и молочные компоненты. В результате получаетс", "p": 50.0, "v": ""}, {"u": "797523208963", "n": "Акция «Сила семян» — 7 натуральных продуктов по специальной цене", "s": "Наборы", "k": "Разнообразие семян, растительных масел и домашних рецептов в одном наборе. Познакомьтесь с коллекцией продуктов Live Food, созданных на осно", "p": 50.0, "v": ""}];</script><script>
+/* поиск по товарам с подсказками (LF-SEARCH) */
+(function(){var o=document.getElementById('srch'),b=document.getElementById('srchBtn'),i=document.getElementById('srchIn'),r=document.getElementById('srchRes'),x=document.getElementById('srchX');if(!o||!b)return;
+  var IX=window.LF_INDEX||[],BASE=window.LF_SEARCH_BASE||'';
+  function norm(s){return (s||'').toLowerCase().replace(/ё/g,'е')}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var SYN={'лен':'льнян','лён':'льнян','льна':'льнян','горчица':'горчич','горчицы':'горчич','тыква':'тыкв','тыквы':'тыкв','расторопша':'расторопш','кедр':'кедр','кедровое':'кедр','олива':'олив','оливки':'олив','конопля':'конопл','миндаль':'миндал','кокос':'кокос','кунжут':'кунжут','тмин':'тмин','чай':'чай','мед':'мед','мёд':'мед','соль':'сол','мука':'мук','жмых':'жмых','смесь':'смес','смеси':'смес','набор':'набор','наборы':'набор','масло':'масл','масла':'масл','ферментум':'ферментум'};
+  function stem(w){if(SYN[w])return SYN[w];return w.length>5?w.slice(0,w.length-2):(w.length>3?w.slice(0,w.length-1):w)}
+  function words(t){return norm(t).split(/[^а-яa-z0-9]+/).filter(Boolean)}
+  function hit(ws,w){var st=stem(w);return ws.some(function(x){return x.indexOf(w)===0||x.indexOf(st)===0})}
+  function score(p,q){var n=words(p.n),k=words(p.k),s=words(p.s),sc=0;q.forEach(function(w){if(hit(n,w))sc+=10;else if(hit(s,w))sc+=4;else if(hit(k,w))sc+=2});return q.every(function(w){return hit(n,w)||hit(s,w)||hit(k,w)})?sc:0}
+  window.lfMatch=function(text,q){var ws=words(text),qs=norm(q).trim().split(/\s+/).filter(function(w){return w.length>1});return !qs.length||qs.every(function(w){return hit(ws,w)})};
+  function hl(t,q){var out=esc(t);q.forEach(function(w){var st=stem(w);if(st.length<2)return;out=out.replace(new RegExp('('+st.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'[а-яa-z]*)','ig'),'<mark>$1</mark>')});return out}
+  function run(){var q=norm(i.value).trim().split(/\s+/).filter(function(w){return w.length>1});if(!q.length){r.innerHTML='<div class="none">Начните вводить название, состав или раздел — например «горчица» покажет масло, жмых и муку.</div>';return}
+    var hits=IX.map(function(p){return [score(p,q),p]}).filter(function(a){return a[0]>0}).sort(function(a,b){return b[0]-a[0]}).slice(0,12);
+    if(!hits.length){r.innerHTML='<div class="none">Ничего не нашлось. Попробуйте другое слово.</div>';return}
+    r.innerHTML=hits.map(function(a,k){var p=a[1];return '<a href="'+BASE+'p'+p.u+'.html"'+(k===0?' class="on"':'')+'><img src="'+BASE+'../img/catalog/sq'+p.u+'.jpg" alt="" loading="lazy"><span><b>'+hl(p.n,q)+'</b><small>'+esc(p.s)+(p.v?' · '+esc(p.v):'')+'</small></span><span class="pr">'+String(p.p).replace('.',',')+' €</span></a>'}).join('')}
+  function open(){o.hidden=false;run();setTimeout(function(){i.focus()},30)}function close(){o.hidden=true}
+  b.addEventListener('click',open);x.addEventListener('click',close);o.addEventListener('click',function(e){if(e.target===o)close()});
+  i.addEventListener('input',run);i.addEventListener('keydown',function(e){if(e.key==='Escape')close();if(e.key==='Enter'){var a=r.querySelector('a.on')||r.querySelector('a');if(a)location.href=a.href}});
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&!/input|textarea/i.test(document.activeElement.tagName)){e.preventDefault();open()}});
+})();
+</script><!-- LF-MOB --><style>
+.toast:empty{display:none}
+.chip-sel{display:none}
+.fbar .chk input[type=checkbox]{appearance:none;-webkit-appearance:none;flex:none;width:44px;height:26px;border-radius:999px;background:#D8D0BC;position:relative;cursor:pointer;transition:background .2s;margin:0}
+.fbar .chk input[type=checkbox]::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(27,42,32,.3);transition:transform .2s}
+.fbar .chk input[type=checkbox]:checked{background:var(--g700)}
+.fbar .chk input[type=checkbox]:checked::after{transform:translateX(18px)}
+.gift-art{float:right;width:clamp(96px,12vw,150px);height:auto;margin:0 0 8px 14px}
+.lf-mbar{display:none}
+.hide{display:none!important}
+.gal{grid-template-columns:minmax(0,1fr)!important}
+.pgrid>*,.cgrid>*,.cgrid2>*,.gal>*{min-width:0}
+@supports not (overflow:clip){html{overflow-x:hidden}}
+#ship .calc{background:#1E3A27!important;border:0;border-radius:16px;box-shadow:0 18px 40px rgba(20,38,27,.22);color:#F7F2E6}
+#ship .calc label{color:#F7F2E6}
+#ship .calc select{background-color:#FBF7EE;color:#1B2A20;border-color:transparent;border-radius:10px}
+#ship .calc .res div{border-top-color:rgba(255,255,255,.16)}
+#ship .calc .res small{color:#C9D3C8}
+#ship .calc .res b{color:#E3C886}
+#ship .calc .res .wide b{color:#F7F2E6}
+.foot .end span:first-child{white-space:nowrap}
+.menu .mi,.menu .mlogo,.menu .mcta{display:none}
+.lf-fly{position:fixed;z-index:95;width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--gold,#C9A45C);box-shadow:0 6px 16px rgba(15,28,20,.35);pointer-events:none;transition:transform .65s cubic-bezier(.5,0,.3,1),opacity .65s}
+@keyframes lfb{0%{transform:none}15%{transform:scale(1.15) rotate(-14deg)}35%{transform:scale(1.15) rotate(12deg)}55%{transform:scale(1.1) rotate(-8deg)}75%{transform:scale(1.05) rotate(5deg)}100%{transform:none}}
+.lf-bump{animation:lfb .6s ease}
+.toast.lf-q{display:none!important}
+@media (max-width:900px){
+  .top{transition:transform .3s ease,background .35s,color .35s,box-shadow .35s}
+  .top.lf-hide{transform:translateY(-110%)}
+  .top.solid,body:not(:has(#hero)) .top{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .top .wrap{height:56px}
+  .top .logo img{height:34px}
+  .top .burger,.top .cart,.top .srch-btn{width:40px;height:40px;min-height:40px}
+  .bk .bt .minus{display:none!important}
+  .atelier .txt{padding-bottom:22px!important}
+  .cgrid2>.cmap{order:-1;min-height:220px}
+  .cgrid2{padding-top:16px}
+  .top .cart{position:relative;padding:0;justify-content:center;overflow:visible}
+  .top .cart::before{content:"";width:21px;height:21px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 10h17l-1.7 9.5H5.2z'/%3E%3Cpath d='M8 10l3.2-6M16 10l-3.2-6M9.5 13.5v3M14.5 13.5v3'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 10h17l-1.7 9.5H5.2z'/%3E%3Cpath d='M8 10l3.2-6M16 10l-3.2-6M9.5 13.5v3M14.5 13.5v3'/%3E%3C/svg%3E") center/contain no-repeat}
+  .top .cart b{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;padding:0 4px;font-size:.72rem;line-height:1}
+  .top .cart[data-n="0"] b{display:none}
+  .steps .oil-fill{transition:none!important;height:calc(var(--sp,0)*(100% - 44px))!important}
+  .steps .oil-drop{animation:none!important;opacity:1!important;top:calc(44px + var(--sp,0)*(100% - 60px))}
+  .steps .oil-run{transition-delay:0s!important;width:0!important}
+  .steps.sp-end .oil-run{width:calc(100% - 51px)!important}
+  .steps .oil-bottle{transition-delay:0s!important;opacity:0!important;transform:translateY(16px) scale(.9)!important}
+  .steps.sp-end .oil-bottle{opacity:1!important;transform:none!important}
+  .consult-grid>.consult-photo{order:-1;aspect-ratio:auto;height:min(100vw,440px);min-height:0}
+  .consult-photo img{object-position:50% 20%}
+  html:has(.menu.on),body:has(.menu.on){overflow:hidden}
+  .tl .tl-bottle{top:calc(56px + var(--mp,0)*(100% - 56px))}
+  .tl .tl-fill{height:calc(var(--mp,0)*100%)}
+  .menu{inset:0 0 0 auto;width:min(82vw,310px);justify-content:flex-start;gap:0;padding:62px 22px 24px;border-radius:22px 0 0 22px;box-shadow:0 0 0 100vmax rgba(15,28,20,.45);opacity:1;transform:translateX(105%);transition:transform .4s cubic-bezier(.2,.8,.2,1),visibility .4s;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .menu.on{transform:none}
+  .menu a{font-family:var(--sans);font-size:1.05rem;line-height:1.3;padding:12px 0;opacity:0;transform:translateX(16px);transition:opacity .35s ease,transform .35s ease}
+  .menu{padding-top:16px}
+  .menu .mlogo{display:block;height:32px;width:auto;align-self:flex-start;margin:4px 0 14px}
+  .menu a{display:flex;align-items:center;gap:12px}
+  .menu .mi{display:block;flex:none;width:20px;height:20px;fill:none;stroke:var(--g700,#2F5A3A);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .menu a.mcta{display:flex;justify-content:center;margin-top:auto;min-height:46px;padding:0 12px;border:0;border-radius:999px;background:var(--gold,#C9A45C);color:#1B2A20;font-weight:500;font-size:1rem}
+  .menu a:nth-last-of-type(2){border-bottom:0;margin-bottom:18px}
+  .menu.on a{opacity:1;transform:none}
+  .menu a:nth-of-type(1){transition-delay:0.10s}.menu a:nth-of-type(2){transition-delay:0.13s}.menu a:nth-of-type(3){transition-delay:0.17s}.menu a:nth-of-type(4){transition-delay:0.20s}.menu a:nth-of-type(5){transition-delay:0.24s}.menu a:nth-of-type(6){transition-delay:0.27s}.menu a:nth-of-type(7){transition-delay:0.31s}.menu a:nth-of-type(8){transition-delay:0.34s}.menu a:nth-of-type(9){transition-delay:0.38s}.menu a:nth-of-type(10){transition-delay:0.41s}.menu a:nth-of-type(11){transition-delay:0.45s}.menu a:nth-of-type(12){transition-delay:0.48s}
+  .menu:not(.on) a{transition-delay:0s}
+  body:has(.menu.on) #bar,body:has(.menu.on) .lf-mbar{transform:translateY(170%)!important}
+  body:has(.menu.on) .wa-fab{visibility:hidden}
+  .menu .x{top:10px;width:40px;height:40px;font-size:1.2rem}
+}
+@media (max-width:700px){
+  .promo-bg{background:rgba(15,28,20,.28);-webkit-backdrop-filter:none;backdrop-filter:none;z-index:89}
+  .promo{z-index:90;left:12px;right:12px;bottom:12px;width:auto;max-height:none;overflow:visible;border-radius:16px}
+  .promo-body{padding:16px 16px 14px}
+  .promo-body .eyebrow{display:none}
+  .promo-body .gift{float:left;width:26px;height:26px;margin:1px 10px 0 0}
+  .promo-body h3{font-size:1.2rem;line-height:1.25;margin:0 34px 6px 0}
+  .promo-body p{font-size:.95rem;line-height:1.4;margin:0}
+  .promo-body p:nth-of-type(2),.promo-body .promo-note{display:none}
+  .promo-btns{margin-top:12px;gap:8px;flex-wrap:nowrap}
+  .promo-btns .btn{min-height:42px;padding:0 10px;font-size:.95rem;white-space:nowrap}
+  .promo-x{top:6px;right:6px;width:36px;height:36px;font-size:1.3rem}
+}
+@media (max-width:360px){.promo-btns{flex-wrap:wrap!important}.promo-btns .btn{flex:1 1 100%!important}}
+@media (max-width:600px){
+  .hero .facts{display:none!important}
+  .hero .txt{padding-top:74px;padding-bottom:14px}
+  .hero h1{font-size:2.15rem}
+  .hero .sub{margin:12px 0 18px}
+  .hero .ctas{display:flex;flex-wrap:nowrap;gap:8px}
+  .hero .ctas .btn{flex:1 1 0;min-width:0;min-height:46px;padding:0 6px;font-size:.92rem;white-space:nowrap}
+  .stage,.hero .hpromo{height:540px;min-height:540px}
+  .hero .hpromo{justify-content:flex-start;align-items:stretch;padding-top:6px;gap:0}
+  .hero .hpromo>img{order:-1;width:100%!important;aspect-ratio:4/3;max-height:none;object-position:50% 58%;border-radius:18px 18px 0 0;box-shadow:none}
+  .hero .hpromo-card{padding:16px 18px 18px;border-radius:0 0 18px 18px;background:rgba(15,28,20,.86);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .hero .hpromo-card p{display:none}
+  .hero .hpromo-card h2{margin-bottom:14px}
+  .pcs{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .promo-btns .btn{flex:1 1 0;min-width:0;padding:0 6px;font-size:.9rem}
+  .lf-mbar span{white-space:nowrap}
+  .toast{top:66px!important;bottom:auto!important;width:max-content;max-width:calc(100vw - 48px);padding:9px 14px!important;border-radius:14px!important;font-size:.9rem!important;line-height:1.3;text-align:center;opacity:0;transform:translate(-50%,-8px)!important;transition:opacity .3s,transform .3s!important}
+  .toast.on{opacity:1;transform:translate(-50%,0)!important}
+  .box-side{position:static!important;max-height:none;overflow:visible;border-bottom:0;background:transparent!important}
+  .box-side .bk{max-width:190px}
+  #collection .box-side{position:sticky!important;top:0;z-index:5;max-height:none;overflow:visible;margin:0 calc(-1*var(--side));padding:6px var(--side) 6px;background:var(--paper,#FBF7EE)!important;border-bottom:1px solid var(--line);box-shadow:0 6px 14px rgba(27,42,32,.06);transition:top .3s ease}
+  body:has(.top:not(.lf-hide)) #collection .box-side{top:56px}
+  #collection .box-side .bk{max-width:176px;margin:0 auto;aspect-ratio:1/.78}
+  #collection .box-side .bk .bt .minus{display:none!important}
+  #collection .box-side .bk .bt{height:60%;bottom:27%}
+  #collection .box-side .bk-tag{width:36%;min-width:0;max-width:none;top:58%;right:4%;padding:2px 3px 1px}
+  #collection .box-side .bk-tag::after{display:none}
+  #collection .box-side .box-cap{text-align:center;margin-top:0}
+  .cgrid>.box-side{position:sticky!important;top:0;z-index:5;max-height:none;overflow:visible;margin:0 calc(-1*var(--side));padding:6px var(--side) 6px;background:var(--paper,#FBF7EE)!important;border-bottom:1px solid var(--line);box-shadow:0 6px 14px rgba(27,42,32,.06);transition:top .3s ease}
+  body:has(.top:not(.lf-hide)) .cgrid>.box-side{top:56px}
+  .cgrid>.box-side .bk{max-width:176px;margin:0 auto;aspect-ratio:1/.78}
+  .cgrid>.box-side .bk .bt .minus{display:none!important}
+  .cgrid>.box-side .bk .bt{height:60%;bottom:27%}
+  .cgrid>.box-side .bk-tag{width:36%;min-width:0;max-width:none;top:58%;right:4%;padding:2px 3px 1px}
+  .cgrid>.box-side .bk-tag::after{display:none}
+  .cgrid>.box-side .box-cap{text-align:center;margin-top:0}
+  #collection .chips{display:flex;flex-wrap:nowrap;gap:6px;padding:0;margin-left:0;margin-right:0}
+  #collection .chips button{flex:1 1 auto;min-width:0;min-height:36px;padding:0 6px;font-size:.85rem;white-space:nowrap}
+  .sets-row{gap:var(--side);scroll-padding-left:var(--side);scroll-padding-right:var(--side)}
+  .sets-row .card{flex:0 0 100%}
+  .sets-row .card .ph{aspect-ratio:3/4;background:var(--paper)}
+  .sets-row .card .ph img{object-fit:contain}
+  .lf-hint{margin:2px 0 0;font-size:.9rem;color:var(--ink-2)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px 16px}
+  .foot-grid>.foot-brand,.foot-grid>div:last-child{grid-column:1/-1}
+  .foot ul{gap:6px}
+  .foot h4{margin-bottom:10px}
+  .foot .end{margin-top:32px}
+  .foot .end{font-size:.9rem;gap:8px 16px}
+  .pgrid,.cgrid,.cgrid2{grid-template-columns:minmax(0,1fr)!important}
+  .ptext a{overflow-wrap:anywhere}
+  #bar:not(.on),.lf-mbar:not(.on){visibility:hidden}
+  .bag{overflow-y:auto;overscroll-behavior:contain}
+  .bag-top{align-items:center}
+  .bag-top h3{font-size:1.4rem}
+  .bag-sub{font-size:.95rem}
+  .bag-body{flex:none;overflow:visible;padding-top:8px}
+  .bag-body .bk{max-width:210px;margin:0 auto}
+  .bag-foot{border-top:0;padding-top:4px}
+  .bag-sum strong{font-size:1.5rem}
+  .chips:has(.fbar){position:static;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;padding:10px var(--side) 12px}
+  #chips .wrap{display:contents}
+  #chips .wrap:first-child>button{display:none}
+  .chip-sel{display:block;order:1;flex:1 1 150px;min-width:0;min-height:44px;padding:0 12px;border:1px solid #E3D8BF;border-radius:10px;background-color:#F4ECD9;color:var(--ink);font:inherit}
+  #chips .chk{order:2;display:flex;align-items:center;gap:8px;font-size:.95rem;color:var(--ink);white-space:nowrap}
+  #chips .pr{order:3;display:flex;align-items:center;gap:6px;font-size:.95rem}
+  #chips .srch-f{order:4;flex:1 1 140px;width:auto}
+  #bar,.lf-mbar{position:fixed;left:auto!important;right:74px!important;bottom:14px!important;z-index:70;display:flex;align-items:center;justify-content:center!important;width:50px;height:50px;min-height:0!important;padding:0!important;gap:0;border-radius:50%!important;background:var(--gold,#C9A45C);color:#1B2A20;text-decoration:none;box-shadow:0 10px 24px rgba(15,28,20,.3);transform:translateY(190%);transition:transform .4s ease}
+  #bar.on,.lf-mbar.on{transform:none}
+  #bar>span,.lf-mbar span{display:none!important}
+  #bar .btn{position:absolute;inset:0;width:100%;height:100%;min-height:0;padding:0;opacity:0;border-radius:50%}
+  #bar::before,.lf-mbar::before{content:"";width:24px;height:24px;background:#1B2A20;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 10h17l-1.7 9.5H5.2z'/%3E%3Cpath d='M8 10l3.2-6M16 10l-3.2-6M9.5 13.5v3M14.5 13.5v3'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 10h17l-1.7 9.5H5.2z'/%3E%3Cpath d='M8 10l3.2-6M16 10l-3.2-6M9.5 13.5v3M14.5 13.5v3'/%3E%3C/svg%3E") center/contain no-repeat}
+  #bar::after,.lf-mbar::after{content:attr(data-n);position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#1E3A27;color:#fff;font-size:.78rem;font-weight:500;line-height:20px;text-align:center}
+}
+</style><script>
+(function(){
+var top=document.querySelector('.top'),ly=window.scrollY||0;
+if(top)window.addEventListener('scroll',function(){var y=window.scrollY||0;
+  if(window.innerWidth>900||document.querySelector('.menu.on')){top.classList.remove('lf-hide');ly=y;return}
+  if(Math.abs(y-ly)<8)return;top.classList.toggle('lf-hide',y>ly&&y>160);ly=y},{passive:true});
+var tl=document.getElementById('tl');
+function tlmove(){if(!tl||window.innerWidth>900)return;var r=tl.getBoundingClientRect(),vh=window.innerHeight,m=Math.max(0,Math.min(1,(vh*.4-r.top)/Math.max(1,r.height-vh*.2)));
+  tl.style.setProperty('--mp',m.toFixed(4));tl.querySelectorAll('.tl-step').forEach(function(st){if(st.getBoundingClientRect().top<vh*.62)st.classList.add('lit')})}
+if(tl){window.addEventListener('scroll',tlmove,{passive:true});window.addEventListener('resize',tlmove);setInterval(tlmove,700)}
+var st=document.getElementById('steps');
+function stmove(){if(!st||window.innerWidth>900)return;var r=st.getBoundingClientRect(),vh=window.innerHeight,m=Math.max(0,Math.min(1,(vh*.45-r.top)/Math.max(1,r.height-vh*.3)));
+  st.style.setProperty('--sp',m.toFixed(4));st.classList.toggle('sp-end',m>.93)}
+if(st){window.addEventListener('scroll',stmove,{passive:true});window.addEventListener('resize',stmove);setInterval(stmove,700)}
+document.addEventListener('click',function(e){var m=document.querySelector('.menu.on');if(m&&e.target.closest&&!e.target.closest('.menu,.burger')){var x=m.querySelector('.x');if(x)x.click();e.preventDefault()}},true);
+var lc=null;document.addEventListener('click',function(e){var t=e.target.closest?e.target.closest('.tile,.card,.pc,.prod,article,li'):null,im=t&&t.querySelector('img');lc={x:e.clientX,y:e.clientY,src:im?(im.currentSrc||im.src):'',t:Date.now()};setTimeout(chk,150);setTimeout(chk,600)},true);
+function qn(){var c=document.getElementById('cartN');if(c&&document.getElementById('bar'))return +c.textContent||0;var b=[];try{b=JSON.parse(localStorage.getItem('lfbag')||'[]')}catch(e){}var n=0;b.forEach(function(i){n+=+i.q||1});return n}
+var lq=-1;
+function chk(){var q=qn(),cb=document.querySelector('.top .cart');if(cb)cb.setAttribute('data-n',q);var bb=document.querySelector('#bar,.lf-mbar');if(bb)bb.setAttribute('data-n',q);if(lq>=0&&q>lq)fly();lq=q}
+function fly(){if(window.innerWidth>900||!lc||Date.now()-lc.t>2500)return;if(top)top.classList.remove('lf-hide');
+  var d=document.createElement(lc.src?'img':'span');if(lc.src)d.src=lc.src;d.className='lf-fly';d.style.left=(lc.x-22)+'px';d.style.top=(lc.y-22)+'px';document.body.appendChild(d);
+  var fb=document.querySelector('#bar,.lf-mbar'),fr=fb&&fb.getBoundingClientRect(),tx=(fr&&fr.width?fr.left+fr.width/2:window.innerWidth-100)-lc.x,ty=window.innerHeight-40-lc.y,bk=document.querySelector('.box-side .bk'),br=bk&&bk.getBoundingClientRect();if(br&&br.width&&br.bottom>40&&br.top<window.innerHeight*.6){tx=br.left+br.width/2-lc.x;ty=br.top+br.height/2-lc.y}
+  requestAnimationFrame(function(){requestAnimationFrame(function(){d.style.transform='translate('+tx+'px,'+ty+'px) scale(.35)';d.style.opacity='.25'})});
+  setTimeout(function(){if(d.parentNode)d.parentNode.removeChild(d);var bar=document.querySelector('#bar,.lf-mbar');if(bar){bar.classList.add('lf-bump');setTimeout(function(){bar.classList.remove('lf-bump')},500)}},700)}
+setInterval(chk,500);
+function ready(f){if(document.readyState!=='loading')f();else document.addEventListener('DOMContentLoaded',f)}
+ready(function(){
+  chk();
+  var mn=document.querySelector('.menu');
+  if(mn&&!mn.querySelector('.mlogo')){
+    var pre=/\/blog\//.test(location.pathname)||/\/catalog\//.test(location.pathname)?'../':'',cat=/\/catalog\//.test(location.pathname)?'index.html':pre+'catalog/index.html';
+    var IC={'о нас':'<path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/>','каталог':'<path d="M10 3h4v3l2 3v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V9l2-3z"/><path d="M8 13h8"/>','наборы':'<rect x="4" y="9" width="16" height="11" rx="2"/><path d="M4 13h16M12 9v11M12 9c-2-4-6-3-5-1s5 1 5 1zm0 0c2-4 6-3 5-1s-5 1-5 1z"/>','курсы':'<path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v5c2 2 8 2 10 0v-5"/>','рецепты':'<path d="M5 11h14a7 7 0 0 1-14 0z"/><path d="M9 7c0-1.5 1-1.5 1-3M14 7c0-1.5 1-1.5 1-3"/>','бонус':'<path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.5-4.1 6-.7z"/>','доставка':'<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/>','контакты':'<path d="M12 21s-6-5.5-6-10.5a6 6 0 0 1 12 0c0 5-6 10.5-6 10.5z"/><circle cx="12" cy="10.5" r="2.2"/>','блог':'<path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8"/>','кабинет':'<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>'};
+    [].forEach.call(mn.querySelectorAll('a'),function(a){var t=a.textContent.toLowerCase(),k;for(k in IC)if(t.indexOf(k)>=0){a.insertAdjacentHTML('afterbegin','<svg class="mi" viewBox="0 0 24 24" aria-hidden="true">'+IC[k]+'</svg>');break}});
+    var lg=document.createElement('img');lg.className='mlogo';lg.src=pre+'img/logo-green.png';lg.alt='Live Food';mn.insertBefore(lg,mn.firstChild);
+    var c=document.createElement('a');c.className='mcta';c.href=cat;c.textContent='Перейти в каталог';mn.appendChild(c);
+  }
+  [].forEach.call(document.querySelectorAll('.toast'),function(t){new MutationObserver(function(){t.classList.toggle('lf-q',window.innerWidth<=600&&/корзин|добавлен/i.test(t.textContent))}).observe(t,{childList:true,characterData:true,subtree:true})});
+  var sr=document.querySelector('.sets-row');
+  if(sr&&window.innerWidth<=600&&sr.children.length>1){var h=document.createElement('p');h.className='lf-hint';h.textContent='Листайте вправо — всего '+sr.children.length;sr.parentNode.insertBefore(h,sr.nextSibling)}
+  var cs=document.getElementById('chipSel');
+  if(cs)cs.addEventListener('change',function(){var b=document.querySelector('#chips button[data-f="'+cs.value+'"]');if(b)b.click()});
+  var ds=document.querySelector('[data-sum]');
+  function tot(){if(!window.shipUpdate)return;window.shipUpdate(parseFloat(ds.textContent.replace(/[^\d,.]/g,'').replace(',','.'))||0)}
+  if(ds){new MutationObserver(tot).observe(ds,{childList:true,characterData:true,subtree:true});setTimeout(tot,300)}
+  if(document.getElementById('bar')||/order\.html/.test(location.pathname))return;
+  var a=document.createElement('a');a.className='lf-mbar';
+  a.href=(/\/blog\//.test(location.pathname)?'../catalog/':/\/catalog\//.test(location.pathname)?'':'catalog/')+'order.html';
+  a.innerHTML='<span></span><span>Оформить</span>';document.body.appendChild(a);
+  function w(n){var d=n%10,h=n%100;return d===1&&h!==11?'товар':d>=2&&d<=4&&(h<12||h>14)?'товара':'товаров'}
+  function upd(){var b=[];try{b=JSON.parse(localStorage.getItem('lfbag')||'[]')}catch(e){}
+    var n=0,s=0;b.forEach(function(i){var q=+i.q||1;n+=q;s+=(+i.p||0)*q});
+    a.firstChild.textContent=n+' '+w(n)+' · '+String(Math.round(s*100)/100).replace('.',',')+' €';a.classList.toggle('on',n>0)}
+  upd();window.addEventListener('storage',upd);document.addEventListener('click',function(){setTimeout(upd,350);setTimeout(upd,1400)});setInterval(upd,2500);
+  if(ds)new MutationObserver(upd).observe(ds,{childList:true,characterData:true,subtree:true});
+});
+})();
+</script><!-- /LF-MOB -->
+<main>
+<div class="wrap crumbs"><a href="../index.html">Главная</a><span>›</span><a href="index.html">Каталог</a><span>›</span><a href="index.html#oil">Масла</a><span>›</span>Подсолнечное масло</div>
+<div class="wrap pgrid">
+  <div class="gal"><div class="main"><img class="bgimg" id="mainBg" src="../img/catalog/sq668757782952.jpg" alt="" aria-hidden="true"><img id="mainImg" src="../img/catalog/sq668757782952.jpg" alt="Подсолнечное масло"></div></div>
+  <div class="ptext"><p>Подсолнечное масло от Live Food получают методом холодного отжима без нагрева и химической очистки. Оно сохраняет природный вкус и насыщенный состав.</p>
+<h3>Особенности</h3>
+<ul><li>Нерафинированное, холодный отжим, без химической очистки</li><li>Насыщенный натуральный вкус</li></ul>
+<h3>Как применять</h3>
+<ul><li>В салатах, кашах, овощных и злаковых блюдах</li><li>В выпечке и домашней кулинарии</li><li>В составе соусов, маринадов и заправок</li></ul>
+<h3>Хранение</h3>
+<p>❗️<strong>Важно: </strong>хранить в тёмном и прохладном месте. Не перегревать</p>
+<h3>Упаковка</h3>
+<ul><li>Тёмная бутылка с герметичной крышкой защищает от света и кислорода</li></ul>
+<p>🌿 Подсолнечное масло — насыщенный вкус для повседневной кухни.</p></div>
+  <div class="box-side">
+    <article class="pc buy" data-s="oil" data-uid="668757782952" data-n="Подсолнечное масло" data-p="10" data-img="img/catalog/sq668757782952.jpg">
+      <div class="ptitle"><span class="eyebrow">Масла</span><h1>Подсолнечное масло</h1><p class="lead">Подсолнечное масло — нерафинированное, холодного отжима, с насыщенным натуральным вкусом. Используется в салатах, кашах, овощных и злаковых блюдах, в выпечке и заправках.</p></div>
+      <div class="row"><b class="price">10 €</b></div>
+      <div class="row"><select class="vol" aria-label="Объём"><option value="250 мл" data-p="10">250 мл</option><option value="500 мл" data-p="16">500 мл</option></select></div>
+      <button class="add" type="button">В корзину</button>
+      <a class="btn btn-line rv-link" href="#reviews">Отзывы <span data-rvn></span></a>
+      <small class="pay-note">Производим после оформления заказа. Доставка по Испании и Европе.</small>
+    </article>
+  <div class="basket" aria-label="Ваша корзина">
+    <div class="box" data-box></div>
+    <ul class="box-list" id="list"></ul>
+    <div class="box-sum"><span>Итого</span><strong data-sum>0 €</strong></div>
+    <label class="ship-pick"><span>Доставка</span><select class="shipsel" aria-label="Способ доставки"><option value="pick" data-p="0">Самовывоз в Торревьехе — бесплатно</option><option value="es-office" data-p="6" selected>Испания, Correos, в отделение — 6 €</option><option value="es-home" data-p="8">Испания, Correos, на дом — 8 €</option><option value="eu-office" data-p="14">Германия, Италия, Швеция, Финляндия, Польша, Португалия, UPS, в отделение — 14 €</option><option value="eu-home" data-p="17">Те же страны, UPS, на дом — 17 €</option><option value="balt-office" data-p="17">Страны Прибалтики, UPS, в отделение — 17 €</option><option value="balt-home" data-p="22">Страны Прибалтики, UPS, на дом — 22 €</option><option value="other-office" data-p="17">Другие страны, UPS, в отделение — 17 €</option><option value="other-home" data-p="22">Другие страны, UPS, на дом — 22 €</option></select></label><div class="box-ship"><span>Доставка</span><b data-ship>6 €</b></div><div class="box-total"><span>Итого с доставкой</span><strong data-total>6 €</strong></div>
+    <a class="btn btn-green" href="order.html">Оформить заказ</a>
+    <a class="btn btn-line" href="index.html">Заказать ещё</a>
+  </div>
+  </div>
+</div>
+<section class="wrap reviews" id="reviews">
+  <div class="rv-head"><div><span class="eyebrow">Отзывы</span><h2>Отзывы о товаре</h2></div></div>
+  <div class="rv-list" id="rvList"></div>
+  <form class="rv-form" id="rvForm" novalidate>
+    <h3>Оставить отзыв</h3>
+    <div class="two"><label>Имя<input type="text" name="name" placeholder="Как вас подписать" required></label><label>Страна<input type="text" name="country" placeholder="Например, Испания" required></label></div>
+    <label>Товар<input type="text" name="product" readonly></label>
+    <div class="stars" role="radiogroup" aria-label="Оценка"><input type="radio" name="stars" id="s5" value="5"><label for="s5" title="5">★</label><input type="radio" name="stars" id="s4" value="4"><label for="s4" title="4">★</label><input type="radio" name="stars" id="s3" value="3"><label for="s3" title="3">★</label><input type="radio" name="stars" id="s2" value="2"><label for="s2" title="2">★</label><input type="radio" name="stars" id="s1" value="1"><label for="s1" title="1">★</label></div>
+    <label>Комментарий<textarea name="text" rows="4" placeholder="Что понравилось, как используете" required></textarea></label>
+    <div class="rv-err" id="rvErr"></div>
+    <button class="btn btn-green" type="submit">Отправить отзыв</button>
+  </form>
+</section>
+<script>
+(function(){var pc=document.querySelector('.pc.buy');if(!pc)return;var uid=pc.dataset.uid,name=pc.dataset.n,list=document.getElementById('rvList'),f=document.getElementById('rvForm'),n=document.querySelector('[data-rvn]');
+  f.product.value=name;function all(){try{return JSON.parse(localStorage.getItem('lfreviews')||'{}')}catch(e){return {}}}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function draw(){var rs=(all()[uid]||[]);if(n)n.textContent=rs.length?'('+rs.length+')':'';if(!rs.length){list.innerHTML='';return}
+    list.innerHTML=rs.slice().reverse().map(function(r){return '<article class="rv-item"><div class="rv-top"><b>'+esc(r.name)+'</b><span>'+esc(r.country)+'</span><span class="rv-stars">'+'★'.repeat(r.stars)+'<i>'+'★'.repeat(5-r.stars)+'</i></span><time>'+r.date+'</time></div><p>'+esc(r.text)+'</p></article>'}).join('')}
+  f.onsubmit=function(e){e.preventDefault();var er=document.getElementById('rvErr');er.textContent='';var st=f.querySelector('input[name=stars]:checked');
+    if(!f.name.value.trim()||!f.country.value.trim()||!f.text.value.trim())return er.textContent='Заполните имя, страну и комментарий';if(!st)return er.textContent='Поставьте оценку';
+    var a=all();(a[uid]=a[uid]||[]).push({name:f.name.value.trim(),country:f.country.value.trim(),stars:+st.value,text:f.text.value.trim(),date:new Date().toLocaleDateString('ru-RU')});try{localStorage.setItem('lfreviews',JSON.stringify(a))}catch(e2){}
+    f.reset();f.product.value=name;draw();er.style.color='var(--g700)';er.textContent='Спасибо! Отзыв сохранён и будет показан после проверки.'};draw()})();
+</script><section class="wrap also"><h2>Смотрите также</h2><div class="pcs"><article class="pc"><a class="pic" href="p364363783332.html"><img class="bgimg" src="../img/catalog/sq364363783332.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../img/catalog/sq364363783332.jpg" alt="Амарантовое масло холодного отжима 50 мл." loading="lazy"></a><h3><a href="p364363783332.html">Амарантовое масло холодного отжима 50 мл.</a></h3><div class="row"><span class="vol1"></span><b class="price">16,5 €</b></div></article><article class="pc"><a class="pic" href="p480729671032.html"><img class="bgimg" src="../img/catalog/sq480729671032.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../img/catalog/sq480729671032.jpg" alt="Набор оливковых масел extra virgin из 5 вкусов по 100 мл." loading="lazy"></a><h3><a href="p480729671032.html">Набор оливковых масел extra virgin из 5 вкусов по 100 мл.</a></h3><div class="row"><span class="vol1"></span><b class="price">35 €</b></div></article><article class="pc"><a class="pic" href="p480225580022.html"><img class="bgimg" src="../img/catalog/sq480225580022.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../img/catalog/sq480225580022.jpg" alt="Набор из пяти оливковых масел extra virgin, 250 мл" loading="lazy"></a><h3><a href="p480225580022.html">Набор из пяти оливковых масел extra virgin, 250 мл</a></h3><div class="row"><span class="vol1"></span><b class="price">60 €</b></div></article><article class="pc"><a class="pic" href="p722411549632.html"><img class="bgimg" src="../img/catalog/sq722411549632.jpg" alt="" aria-hidden="true" loading="lazy"><img src="../img/catalog/sq722411549632.jpg" alt="Оливковое масло extra virgin с кайенским перцем 250 мл" loading="lazy"></a><h3><a href="p722411549632.html">Оливковое масло extra virgin с кайенским перцем 250 мл</a></h3><div class="row"><span class="vol1"></span><b class="price">16 €</b></div></article></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-brand"><img src="../img/logo-white.png" alt="Live Food Premium" width="129" height="48" loading="lazy"><p>Натуральные масла холодного отжима и живые продукты. Производство в Испании, доставка по всей Европе.</p><a class="btn btn-gold wa" href="https://wa.me/34634093340" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+    <div><h4>Сайт</h4><ul><li><a href="../index.html#story">О нас</a></li><li><a href="../catalog/index.html">Каталог</a></li><li><a href="../index.html#sets">Наборы</a></li><li><a href="../catalog/p279492514602.html">Курсы</a></li><li><a href="../blog/index.html#recipes">Рецепты</a></li><li><a href="../blog/index.html">Блог</a></li></ul></div>
+    <div><h4>Покупателям</h4><ul><li><a href="../index.html#ship">Доставка и оплата</a></li><li><a href="../index.html#bonus">Бонусная программа</a></li><li><a href="../catalog/kabinet.html">Личный кабинет</a></li><li><a href="../catalog/oferta.html">Публичная оферта</a></li><li><a href="../catalog/kontakty.html">Контакты</a></li></ul></div>
+    <div><h4>Контакты</h4><address><b>Самовывоз</b>Торревьеха, по договорённости<b>Производство</b><a class="fmap" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Galeon+3%2C+03182+Torrevieja" target="_blank" rel="noopener" aria-label="Открыть адрес производства на карте" style="display:block;max-width:300px;margin:6px 0 4px;border-radius:10px;overflow:hidden;position:relative;line-height:0"><img src="../img/map-galeon.jpg" alt="Карта: Calle Galeon 3, Torrevieja" width="720" height="400" loading="lazy" style="display:block;width:100%;height:auto;margin:0"><span style="position:absolute;left:8px;bottom:8px;background:#fff;color:#1B2A20;font-size:.85rem;line-height:1;padding:7px 10px;border-radius:999px">Открыть на карте</span></a>Calle Galeon 3, 03182 Torrevieja, Alicante, Испания<b>Телефон и WhatsApp</b><a href="tel:+34634093340">+34 634 093 340</a><b>E-mail</b><a href="mailto:livefoodpremium@gmail.com">livefoodpremium@gmail.com</a><a class="ig" href="https://www.instagram.com/livefood.es" target="_blank" rel="noopener">Instagram</a></address></div>
+  </div>
+  <div class="end"><span>© 2026 Live Food. Все права защищены.</span><span>RU · DE · EN · ES</span></div>
+</div></footer>
+<a class="wa-fab" href="https://wa.me/34634093340" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3.3 4.4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-2-.9c-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6z"/></svg></a>
+<div class="toast" id="toast" role="status"></div>
+<script>
+var $=function(s){return document.querySelector(s)};
+var menu=$('#menu'),burger=$('#burger'),toast=$('#toast'),tt;
+function setMenu(on){menu.classList.toggle('on',on);burger.setAttribute('aria-expanded',on);document.body.style.overflow=on?'hidden':''}
+burger.onclick=function(){setMenu(true)};$('#menuX').onclick=function(){setMenu(false)};
+menu.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
+function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2400)}
+/* фильтр */
+function applyF(){var on=document.querySelector('#chips button.on'),f=on?on.dataset.f:'all',lo=+($('#pMin').value||0),hi=+($('#pMax').value||9999),st=$('#stock').checked,n=0;
+  document.querySelectorAll('.pc').forEach(function(c){var p=+c.dataset.p,show=(f==='all'||c.dataset.s===f)&&p>=lo&&p<=hi&&(!st||c.dataset.stock!=='0');c.classList.toggle('hide',!show);if(show)n++});
+  $('#empty').classList.toggle('hide',n>0)}
+if($('#chips'))$('#chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#chips button').forEach(function(x){x.classList.toggle('on',x===b)});applyF()});
+['pMin','pMax','stock'].forEach(function(id){if(!$('#'+id))return;$('#'+id).addEventListener('input',applyF);$('#'+id).addEventListener('change',applyF)});
+/* цена по объёму */
+document.addEventListener('change',function(e){var s=e.target.closest('.vol');if(!s)return;var o=s.options[s.selectedIndex];s.closest('.pc').querySelector('.price').textContent=(+o.dataset.p).toLocaleString('ru-RU')+' €'});
+/* корзина */
+var BOT={'тмин':'tmin','кунжут':'kunzhut','кедр':'kedr','тыкв':'tykva','расторопш':'rastoropsha','олив':'oliva','льнян':'len'};
+var bag=[];try{bag=JSON.parse(localStorage.getItem('lfbag')||'[]')}catch(e){}
+function saveBag(){try{localStorage.setItem('lfbag',JSON.stringify(bag))}catch(e){}}
+function bot(n){var l=n.toLowerCase();for(var k in BOT)if(l.indexOf(k)>-1)return '../img/bottle-'+BOT[k]+'.png';return null}
+var KIND={oil:'bottle',set:'set',course:'card',mix:'packg',cake:'packg',flour:'packl',salt:'packl',seed:'packg',other:'packg',ferm:'bottle',honey:'jar',tea:'packt',herb:'packt'},KW={bottle:12.5,packl:27,packg:27,packt:27,jar:22,set:32,card:24};
+function sec(it){if(it.s)return it.s;var c=document.querySelector('.pc[data-uid="'+it.uid+'"]');return c?c.dataset.s:''}
+function kind(it){return it.oil&&bot(it.n)?'bottle':(KIND[sec(it)]||'sack')}
+function pic(it){ var b=it.oil&&bot(it.n); return b||'../img/bk-'+kind(it)+'.svg' }
+function plural(n){return n+(n%10==1&&n%100!=11?' товар':n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?' товара':' товаров')}
+function drawBag(){saveBag();
+  var qty=0,sum=0;bag.forEach(function(b){qty+=b.q;sum+=b.q*b.p});
+  var units=[];bag.forEach(function(b){for(var i=0;i<b.q;i++)units.push(b)});
+  var xs=[12,27,42,57,72,87],bts='';
+  units.slice(0,6).forEach(function(b,i){var kk=kind(b);bts+='<span class="bt k-'+kk+'" style="left:'+Math.max(4,Math.min(xs[i]-KW[kk]/2,96-KW[kk]))+'%;animation-delay:'+(i*120)+'ms"><img src="'+pic(b)+'" alt=""><button class="minus" type="button" data-minus="'+b.key+'" aria-label="Убрать">−</button></span>'});
+  $('[data-box]').innerHTML='<div class="bk"><div class="bk-slots">'+bts+'</div><img class="bk-img" src="../img/basket.png" alt=""><img class="bk-front" src="../img/basket-front.png" alt="">'+(qty>6?'<span class="bk-more">+'+(qty-6)+'</span>':'')+'<span class="bk-tag"><img src="../img/logo-green.png" alt="Live Food"></span></div>'+
+    '<div class="box-cap"><span>'+(qty?'В корзине <b>'+plural(qty)+'</b>':'Корзина пустая')+'</span></div>';
+  $('#list').innerHTML=bag.map(function(b){return '<li><span>'+b.n+(b.v&&b.n.indexOf(b.v)<0?', '+b.v:'')+(b.q>1?' ×'+b.q:'')+'</span><span>'+(b.q*b.p).toLocaleString('ru-RU')+' € <button type="button" data-minus="'+b.key+'" aria-label="Убрать">−</button></span></li>'}).join('');
+  $('[data-sum]').textContent=sum.toLocaleString('ru-RU')+' €'; window.bagSum=function(){return sum}; if(window.shipUpdate)window.shipUpdate(sum);
+  document.querySelectorAll('.pc').forEach(function(c){c.classList.toggle('has',bag.some(function(b){return b.uid===c.dataset.uid}))});
+}
+function flyTo(from,src,done){var box=$('.box-side .bk'),r=box&&box.getBoundingClientRect(),fr=from.getBoundingClientRect();
+  if(!r||!r.width||r.bottom<0||r.top>innerHeight||matchMedia('(prefers-reduced-motion:reduce)').matches){done();return}
+  var im=new Image();im.src=src;im.className='fly ic';im.style.left=(fr.left+fr.width/2-27)+'px';im.style.top=(fr.top+fr.height/2-27)+'px';document.body.appendChild(im);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){im.style.transform='translate('+(r.left+r.width/2-fr.left-fr.width/2)+'px,'+(r.top+r.height/2-fr.top-fr.height/2)+'px) scale(.3)';im.style.opacity='0'})});
+  setTimeout(function(){im.remove();done()},800)}
+document.addEventListener('click',function(e){
+  var m=e.target.closest('[data-minus]');if(m){var k=m.dataset.minus,it=bag.filter(function(b){return b.key===k})[0];if(!it)return;it.q--;if(it.q<=0)bag=bag.filter(function(b){return b.key!==k});drawBag();return}
+  var a=e.target.closest('.add');if(a){var c=a.closest('.pc'),sel=c.querySelector('.vol'),v=sel?sel.value:(c.querySelector('.vol1')||{}).textContent||'',p=sel?+sel.options[sel.selectedIndex].dataset.p:+c.dataset.p;
+    var key=c.dataset.uid+'|'+v,it=bag.filter(function(b){return b.key===key})[0];
+    var oil=c.dataset.s==='oil'&&!!bot(c.dataset.n);
+    if(it)it.q++;else bag.push({key:key,uid:c.dataset.uid,n:c.dataset.n,v:v,p:p,q:1,img:c.dataset.img,oil:oil,s:c.dataset.s});
+    flyTo(c.querySelector('.pic')||c.querySelector('.add'),pic({n:c.dataset.n,oil:oil,s:c.dataset.s,uid:c.dataset.uid}),function(){drawBag();say('В корзине: '+c.dataset.n+(v&&c.dataset.n.indexOf(v)<0?', '+v:''))});return}
+  
+  var s=e.target.closest('[data-soon]');if(s){e.preventDefault();say(s.dataset.soon)}
+});
+drawBag();
+
+/* доставка в корзине */
+(function(){function money(v){return v.toLocaleString('ru-RU')+' €'}
+  var saved='';try{saved=localStorage.getItem('lfship')||''}catch(e){}
+  function all(){return document.querySelectorAll('.shipsel')}
+  function price(){var s=all()[0];if(!s)return 0;var o=s.options[s.selectedIndex];return o?+o.dataset.p:0}
+  window.shipUpdate=function(sum){var p=price();document.querySelectorAll('[data-ship]').forEach(function(el){el.textContent=money(p)});document.querySelectorAll('[data-total]').forEach(function(el){el.textContent=money(sum+p)})};
+  all().forEach(function(s){if(saved)s.value=saved;s.addEventListener('change',function(){all().forEach(function(x){x.value=s.value});try{localStorage.setItem('lfship',s.value)}catch(e){}window.shipUpdate(window.bagSum?window.bagSum():0)})});
+})();
+if(window.bagSum&&window.shipUpdate)window.shipUpdate(window.bagSum());
+</script>
+<script>
+document.querySelectorAll('.thumbs button').forEach(function(b){b.onclick=function(){document.getElementById('mainImg').src=b.dataset.src;document.getElementById('mainBg').src=b.dataset.src;document.querySelectorAll('.thumbs button').forEach(function(x){x.classList.toggle('on',x===b)})}});
+</script></body>
+</html>

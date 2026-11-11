@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Live Food: как сайт выглядит на телефоне</title>
+<style>
+:root{--ink:#1F2A22;--ink2:#4A574E;--line:#E4DFD2;--g:#2F5A3A}
+*{box-sizing:border-box}
+body{margin:0;background:#F6F3EC;color:var(--ink);font:400 16px/1.5 "Source Sans 3","Inter","IBM Plex Sans","Segoe UI",system-ui,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:start}
+h1{font-weight:500;font-size:1.5rem;line-height:1.2;margin:0 0 8px}
+p{margin:0 0 12px;color:var(--ink2)}
+.grp{margin:18px 0 6px;font-weight:500;color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btns button,.btns a{font:inherit;font-weight:500;border:1.5px solid var(--g);background:#fff;color:var(--g);padding:9px 16px;border-radius:999px;cursor:pointer;text-decoration:none}
+.btns button.on{background:var(--g);color:#fff}
+.btns button:hover,.btns a:hover{background:#E6F0E7}.btns button.on:hover{background:var(--g)}
+.phone{position:sticky;top:16px;background:#1B1F1C;border-radius:38px;padding:14px 12px 16px;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.phone::before{content:"";display:block;width:70px;height:6px;border-radius:6px;background:#3A403B;margin:0 auto 10px}
+.phone iframe{display:block;border:0;border-radius:24px;background:#fff;width:390px;height:760px}
+.size{text-align:center;color:#C9CFC9;font-size:.9rem;margin-top:10px}
+@media (max-width:860px){main{grid-template-columns:1fr}.phone{position:static;justify-self:center}}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>Как сайт выглядит на телефоне</h1>
+    <p>Справа сайт открыт в рамке шириной телефона. Его можно листать и нажимать, как на настоящем телефоне. Кнопки ниже переключают страницы и ширину экрана.</p>
+    <p class="grp">Страница</p>
+    <div class="btns" id="pages">
+      <button type="button" data-u="../index.html" class="on">Главная</button>
+      <button type="button" data-u="../catalog/index.html">Каталог</button>
+      <button type="button" data-u="../catalog/p302186820692.html">Товар</button>
+      <button type="button" data-u="../catalog/order.html">Заказ</button>
+      <button type="button" data-u="../catalog/kabinet.html">Кабинет</button>
+      <button type="button" data-u="../catalog/konsultacii.html">Консультации</button>
+      <button type="button" data-u="../catalog/kontakty.html">Контакты</button>
+      <button type="button" data-u="../blog/index.html">Блог</button>
+      <button type="button" data-u="../instrukciya/index.html">Инструкция</button>
+    </div>
+    <p class="grp">Ширина экрана</p>
+    <div class="btns" id="sizes">
+      <button type="button" data-w="320" data-h="640">Маленький телефон, 320</button>
+      <button type="button" data-w="390" data-h="760" class="on">Обычный телефон, 390</button>
+      <button type="button" data-w="430" data-h="820">Большой телефон, 430</button>
+    </div>
+    <p class="grp">Версия для компьютера</p>
+    <div class="btns">
+      <a href="../index.html" target="_blank" rel="noopener">Открыть сайт во всё окно</a>
+      <a href="../instrukciya/index.html" target="_blank" rel="noopener">Открыть инструкцию</a>
+    </div>
+  </div>
+  <div class="phone">
+    <iframe id="fr" src="../index.html" title="Сайт Live Food в ширине телефона"></iframe>
+    <div class="size" id="sz">390 × 760</div>
+  </div>
+</main>
+<script>
+(function(){var fr=document.getElementById('fr'),sz=document.getElementById('sz');
+function on(box,b){box.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)})}
+document.getElementById('pages').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;on(this,b);fr.src=b.dataset.u});
+document.getElementById('sizes').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;on(this,b);fr.style.width=b.dataset.w+'px';fr.style.height=b.dataset.h+'px';sz.textContent=b.dataset.w+' × '+b.dataset.h});
+})();
+</script>
+</body>
+</html>
