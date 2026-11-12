@@ -620,11 +620,11 @@ document.addEventListener('change',function(e){var s=e.target.closest('.vol');if
 var BOT={'тмин':'tmin','кунжут':'kunzhut','кедр':'kedr','тыкв':'tykva','расторопш':'rastoropsha','олив':'oliva','льнян':'len'};
 var bag=[];try{bag=JSON.parse(localStorage.getItem('lfbag')||'[]')}catch(e){}
 function saveBag(){try{localStorage.setItem('lfbag',JSON.stringify(bag))}catch(e){}}
-function bot(n){var l=n.toLowerCase();for(var k in BOT)if(l.indexOf(k)>-1)return '../img/bottle-'+BOT[k]+'.png';return null}
+function bot(n){var l=n.toLowerCase();for(var k in BOT)if(l.indexOf(k)>-1)return '../img/bottle-'+BOT[k]+'.png?v=1112';return null}
 var KIND={oil:'bottle',set:'set',course:'card',mix:'packg',cake:'packg',flour:'packl',salt:'packl',seed:'packg',other:'packg',ferm:'bottle',honey:'jar',tea:'packt',herb:'packt'},KW={bottle:12.5,packl:27,packg:27,packt:27,jar:22,set:32,card:24};
 function sec(it){if(it.s)return it.s;var c=document.querySelector('.pc[data-uid="'+it.uid+'"]');return c?c.dataset.s:''}
 function kind(it){return it.oil&&bot(it.n)?'bottle':(KIND[sec(it)]||'sack')}
-function pic(it){ var b=it.oil&&bot(it.n); return b||'../img/bk-'+kind(it)+'.svg' }
+function pic(it){ var b=it.oil&&bot(it.n); return b||'../img/bk-'+kind(it)+'.svg?v=1112' }
 function plural(n){return n+(n%10==1&&n%100!=11?' товар':n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?' товара':' товаров')}
 function drawBag(){saveBag();
   var qty=0,sum=0;bag.forEach(function(b){qty+=b.q;sum+=b.q*b.p});
