@@ -1169,17 +1169,20 @@ function aoTex(){ const cv = document.createElement('canvas'); cv.width = cv.hei
 function ridge(){ const cv = document.createElement('canvas'); cv.width = 256; cv.height = 4; const x = cv.getContext('2d');
   for (let i = 0; i < 256; i++){ const v = 128 + 127*Math.sin(i/256*Math.PI*96); x.fillStyle = `rgb(${v},${v},${v})`; x.fillRect(i, 0, 1, 4); } return new THREE.CanvasTexture(cv); }
 function bottle(map){
-  const g = new THREE.Group(), B = 3.35, N = 5;
+  const g = new THREE.Group(), B = 3.40, N = 5; /* настоящая форма 500 мл: квадратный корпус, длинное горло, высокая крышка */
   const prof = [{y:0,r:0,n:N},{y:0,r:.46,n:N},{y:.035,r:.5,n:N},{y:B*.5,r:.5,n:N},{y:B,r:.5,n:N}];
-  for (let k = 1; k <= 18; k++){ const t = k/18; prof.push({y:B+.32*Math.sin(t*Math.PI/2), r:.2+.3*Math.cos(t*Math.PI/2), n:2+(N-2)*Math.pow(1-t, 1.6)}); }
-  prof.push({y:B+.66,r:.2,n:2},{y:B+.68,r:.218,n:2},{y:B+.76,r:.218,n:2},{y:B+.76,r:0,n:2});
+  for (let k = 1; k <= 18; k++){ const t = k/18; prof.push({y:B+.42*Math.sin(t*Math.PI/2), r:.25+.25*Math.cos(t*Math.PI/2), n:2+(N-2)*Math.pow(1-t, 1.6)}); }
+  prof.push({y:B+.80,r:.25,n:2},{y:B+.80,r:0,n:2});
   const body = new THREE.Mesh(loft(prof, 128), new THREE.MeshPhysicalMaterial({color:0x0f100e, roughness:.08, clearcoat:1, clearcoatRoughness:.04, envMapIntensity:1.4})); body.castShadow = true; g.add(body);
   const ao = new THREE.Mesh(new THREE.PlaneGeometry(1.9, 1.9), new THREE.MeshBasicMaterial({map:aoTex(), transparent:true, depthWrite:false, opacity:1})); ao.rotation.x = -Math.PI/2; ao.position.y = .004; g.add(ao);
-  const cap = new THREE.Mesh(new THREE.LatheGeometry([[0,0],[.30,0],[.31,.015],[.31,.07],[.293,.085],[.293,.31],[.283,.335],[.25,.35],[0,.35]].map(p => new THREE.Vector2(p[0], p[1])), 96),
+  const V = a => a.map(p => new THREE.Vector2(p[0], p[1]));
+  const collar = new THREE.Mesh(new THREE.LatheGeometry(V([[0,0],[.255,0],[.268,.014],[.268,.232],[.258,.244],[0,.244]]), 96), new THREE.MeshStandardMaterial({color:0x121212, roughness:.42}));
+  collar.position.y = B + .77; collar.castShadow = true; g.add(collar);
+  const cap = new THREE.Mesh(new THREE.LatheGeometry(V([[0,0],[.262,0],[.272,.012],[.272,.225],[.262,.262],[.235,.282],[0,.288]]), 96),
     new THREE.MeshStandardMaterial({color:0x111111, roughness:.6, bumpMap:ridge(), bumpScale:innerWidth < 900 ? .12 : .6}));
-  cap.position.y = B + .50; cap.castShadow = true; g.add(cap);
-  const lw = .77, lab = new THREE.Mesh(new THREE.PlaneGeometry(lw, lw/.2448), new THREE.MeshStandardMaterial({map, roughness:.6, polygonOffset:true, polygonOffsetFactor:-4, polygonOffsetUnits:-4}));
-  lab.position.set(0, B/2+.02, .506); g.add(lab); const bk = lab.clone(); bk.rotation.y = Math.PI; bk.position.z = -.506; g.add(bk);
+  cap.position.y = B + 1.016; cap.castShadow = true; g.add(cap);
+  const lw = .856, lab = new THREE.Mesh(new THREE.PlaneGeometry(lw, lw/.2616), new THREE.MeshStandardMaterial({map, roughness:.6, polygonOffset:true, polygonOffsetFactor:-4, polygonOffsetUnits:-4}));
+  lab.position.set(0, 1.73, .506); g.add(lab); const bk = lab.clone(); bk.rotation.y = Math.PI; bk.position.z = -.506; g.add(bk);
   g.position.y = -2.18; return g;
 }
 const SH = [{t:'img/label-tmin.jpg', n:'Масло чёрного тмина', p:'яркий и пряный вкус'},{t:'img/label-tykva.jpg', n:'Тыквенное масло', p:'глубокий орехово-семечковый вкус'},{t:'img/label-rastoropsha.jpg', n:'Масло расторопши', p:'насыщенный, слегка травянистый вкус'},{t:'img/label-kunzhut.jpg', n:'Кунжутное масло', p:'приятный ореховый вкус'}];
@@ -1207,7 +1210,7 @@ if (r){
   new IntersectionObserver(e => vis = e[0].isIntersecting).observe(box);
   const still = matchMedia('(prefers-reduced-motion:reduce)').matches;
   (function loop(){ requestAnimationFrame(loop); if (!vis) return; const t = performance.now()/1000;
-    bs.forEach((b, i) => { const on = i === act; b.position.z += ((on ? .7 : 0) - b.position.z)*.08; b.position.y = -2.18; const sc = on ? 1.04 : 1; b.scale.x += (sc - b.scale.x)*.08; b.scale.y = b.scale.z = b.scale.x;
+    bs.forEach((b, i) => { const on = i === act; b.position.z += ((on ? .7 : 0) - b.position.z)*.08; b.position.y = -2.18; const sc = (on ? 1.04 : 1)*.89; b.scale.x += (sc - b.scale.x)*.08; b.scale.y = b.scale.z = b.scale.x;
       b.rotation.y = 0; });
     cam.position.x = 0; cam.lookAt(0, -1.1, 0); r.render(scene, cam); })();
   const ray = new THREE.Raycaster(), v = new THREE.Vector2();
