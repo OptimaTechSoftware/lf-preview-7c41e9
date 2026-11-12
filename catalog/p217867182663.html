@@ -622,12 +622,12 @@ burger.onclick=function(){setMenu(true)};$('#menuX').onclick=function(){setMenu(
 menu.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
 function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2400)}
 /* фильтр */
-function applyF(){var on=document.querySelector('#chips button.on'),f=on?on.dataset.f:'all',lo=+($('#pMin').value||0),hi=+($('#pMax').value||9999),st=$('#stock').checked,n=0;
-  document.querySelectorAll('.pc').forEach(function(c){var p=+c.dataset.p,show=(f==='all'||c.dataset.s===f)&&p>=lo&&p<=hi&&(!st||c.dataset.stock!=='0');c.classList.toggle('hide',!show);if(show)n++});
+var lfMulti=null;function applyF(){var on=document.querySelector('#chips button.on'),f=on?on.dataset.f:'all',lo=+($('#pMin').value||0),hi=+($('#pMax').value||9999),st=$('#stock').checked,n=0;
+  document.querySelectorAll('.pc').forEach(function(c){var p=+c.dataset.p,show=(lfMulti?lfMulti.indexOf(c.dataset.s)>=0:(f==='all'||c.dataset.s===f))&&p>=lo&&p<=hi&&(!st||c.dataset.stock!=='0');c.classList.toggle('hide',!show);if(show)n++});
   $('#empty').classList.toggle('hide',n>0)}
-if($('#chips'))$('#chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+if($('#chips'))$('#chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;lfMulti=null;
   document.querySelectorAll('#chips button').forEach(function(x){x.classList.toggle('on',x===b)});applyF()});
-function lfHash(){var h=location.hash.slice(1);if(!h)return;var b=document.querySelector('#chips button[data-f="'+h+'"]');if(!b)return;b.click();var cs=document.getElementById('chipSel');if(cs)cs.value=h}lfHash();addEventListener('hashchange',lfHash);
+function lfHash(){var h=location.hash.slice(1);if(!h)return;if(h.indexOf(',')>0){var m=h.split(',');lfMulti=m;document.querySelectorAll('#chips button').forEach(function(x){x.classList.toggle('on',m.indexOf(x.dataset.f)>=0)});applyF();var c2=document.getElementById('chipSel');if(c2){var o=c2.querySelector('option[data-m]')||c2.insertBefore(document.createElement('option'),c2.options[1]);o.setAttribute('data-m','1');o.value=h;o.textContent=[].map.call(document.querySelectorAll('#chips button.on'),function(x){return x.textContent}).join(' и ');c2.value=h}return}var b=document.querySelector('#chips button[data-f="'+h+'"]');if(!b)return;b.click();var cs=document.getElementById('chipSel');if(cs)cs.value=h}lfHash();addEventListener('hashchange',lfHash);
 ['pMin','pMax','stock'].forEach(function(id){if(!$('#'+id))return;$('#'+id).addEventListener('input',applyF);$('#'+id).addEventListener('change',applyF)});
 /* цена по объёму */
 document.addEventListener('change',function(e){var s=e.target.closest('.vol');if(!s)return;var o=s.options[s.selectedIndex];s.closest('.pc').querySelector('.price').textContent=(+o.dataset.p).toLocaleString('ru-RU')+' €'});
