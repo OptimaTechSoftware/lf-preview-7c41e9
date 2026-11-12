@@ -625,6 +625,7 @@ function applyF(){var on=document.querySelector('#chips button.on'),f=on?on.data
   $('#empty').classList.toggle('hide',n>0)}
 if($('#chips'))$('#chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   document.querySelectorAll('#chips button').forEach(function(x){x.classList.toggle('on',x===b)});applyF()});
+function lfHash(){var h=location.hash.slice(1);if(!h)return;var b=document.querySelector('#chips button[data-f="'+h+'"]');if(!b)return;b.click();var cs=document.getElementById('chipSel');if(cs)cs.value=h}lfHash();addEventListener('hashchange',lfHash);
 ['pMin','pMax','stock'].forEach(function(id){if(!$('#'+id))return;$('#'+id).addEventListener('input',applyF);$('#'+id).addEventListener('change',applyF)});
 /* цена по объёму */
 document.addEventListener('change',function(e){var s=e.target.closest('.vol');if(!s)return;var o=s.options[s.selectedIndex];s.closest('.pc').querySelector('.price').textContent=(+o.dataset.p).toLocaleString('ru-RU')+' €'});
