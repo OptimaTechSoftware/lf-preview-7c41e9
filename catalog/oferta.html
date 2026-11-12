@@ -452,7 +452,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacin
 var top=document.querySelector('.top'),ly=window.scrollY||0;
 if(top)window.addEventListener('scroll',function(){var y=window.scrollY||0;
   if(window.innerWidth>900||document.querySelector('.menu.on')){top.classList.remove('lf-hide');ly=y;return}
-  if(Math.abs(y-ly)<8)return;top.classList.toggle('lf-hide',y>ly&&y>160);ly=y},{passive:true});
+  ly=y},{passive:true});
 var tl=document.getElementById('tl');
 function tlmove(){if(!tl)return;
   if(window.innerWidth>900){var r0=tl.getBoundingClientRect(),v0=window.innerHeight,m0=Math.max(0,Math.min(1,(v0*.8-r0.top)/(v0*.55))),ss=tl.querySelectorAll('.tl-step');
