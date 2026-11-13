@@ -422,8 +422,25 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 .promo-bg{position:fixed;inset:0;z-index:70;background:rgba(15,28,20,.45);backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
 .promo{position:fixed;z-index:71;left:50%;top:50%;transform:translate(-50%,-50%) scale(.96);width:min(760px,calc(100% - 40px));display:grid;grid-template-columns:220px 1fr;background:var(--paper);border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(15,28,20,.35);opacity:0;visibility:hidden;transition:opacity .45s var(--ease),transform .45s var(--ease),visibility .45s}
 .promo.on,.promo-bg.on{opacity:1;visibility:visible}.promo.on{transform:translate(-50%,-50%) scale(1)}
-.promo-pic{background:linear-gradient(160deg,var(--g800),var(--g950));display:grid;place-items:center;padding:28px}
-.promo-pic img{width:64px;height:auto;filter:drop-shadow(0 16px 18px rgba(0,0,0,.45));animation:promoFloat 4s ease-in-out infinite}
+.promo{grid-template-columns:300px 1fr;width:min(850px,calc(100% - 40px))}
+.promo-pic{position:relative;overflow:hidden;min-height:400px;background:linear-gradient(180deg,#4F7A5B 0%,#3C6449 62%,#2C4E38 100%)}
+.promo-pic img{position:absolute;width:auto;height:auto;max-width:none}
+.promo-pic img.b{filter:drop-shadow(0 10px 8px rgba(10,22,14,.4))}
+/* набор 1: в плетёной корзине */
+.promo-pic .bkx{position:absolute;left:-7%;right:-7%;bottom:3%;aspect-ratio:817/663}
+.promo-pic .bkx img.bk{left:0;bottom:0;width:100%;filter:drop-shadow(0 16px 14px rgba(10,22,14,.4))}.promo-pic .bkx img.fr{left:0;bottom:0;width:100%;z-index:3}
+.promo-pic .bkx img.b{bottom:22%;z-index:2}
+.promo-pic .bkx img.b:nth-of-type(1){height:92%;left:12%;transform:rotate(-5deg)}.promo-pic .bkx img.b:nth-of-type(2){height:104%;left:27%;transform:rotate(-2deg)}.promo-pic .bkx img.b:nth-of-type(3){height:110%;left:43%}.promo-pic .bkx img.b:nth-of-type(4){height:104%;left:59%;transform:rotate(2deg)}.promo-pic .bkx img.b:nth-of-type(5){height:92%;left:74%;transform:rotate(5deg)}
+/* набор 2: плотной группой */
+.promo-pic[data-set="group"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14%;background:linear-gradient(180deg,rgba(16,34,22,0),rgba(16,34,22,.4))}
+.promo-pic[data-set="group"]>img.b{bottom:6%}
+.promo-pic[data-set="group"]>img.b:nth-of-type(1){height:80%;left:17%}.promo-pic[data-set="group"]>img.b:nth-of-type(2){height:80%;right:17%}.promo-pic[data-set="group"]>img.b:nth-of-type(3){height:86%;left:50%;transform:translateX(-50%)}.promo-pic[data-set="group"]>img.b:nth-of-type(4){height:58%;left:5%;z-index:2;bottom:4%}.promo-pic[data-set="group"]>img.b:nth-of-type(5){height:58%;right:5%;z-index:2;bottom:4%}.promo-pic[data-set="group"]>img.b:nth-of-type(6){height:40%;left:27%;z-index:3;bottom:3%}.promo-pic[data-set="group"]>img.b:nth-of-type(7){height:40%;right:27%;z-index:3;bottom:3%}
+/* набор 3: подарочная коробка */
+.promo-pic[data-set="box"]>img.b{bottom:17%}
+.promo-pic[data-set="box"]>img.b:nth-of-type(1){height:57%;left:6%}.promo-pic[data-set="box"]>img.b:nth-of-type(2){height:62%;left:27.5%}.promo-pic[data-set="box"]>img.b:nth-of-type(3){height:62%;right:27.5%}.promo-pic[data-set="box"]>img.b:nth-of-type(4){height:57%;right:6%}
+.promo-pic .box{position:absolute;left:6%;right:6%;bottom:6%;height:35%;z-index:3;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#F4ECD8,#E6D9BA);box-shadow:0 14px 18px rgba(10,22,14,.38),inset 0 2px 0 rgba(255,255,255,.6);display:grid;place-items:center}
+.promo-pic .box::before{content:"";position:absolute;left:0;right:0;top:0;height:9px;border-radius:8px 8px 0 0;background:#C9A45C}
+.promo-pic .box img{position:static;width:62%;height:auto}
 @keyframes promoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .promo-body{padding:34px 36px 32px}
 .promo-body h3{font-size:clamp(1.7rem,2.6vw,2.3rem);line-height:1.08;margin-bottom:14px}
@@ -883,7 +900,8 @@ m.addEventListener('click',function(e){if(!e.target.closest('.lfv-box'))close()}
 <div class="promo-bg" id="promoBg"></div>
 <aside class="promo" id="promo" role="dialog" aria-label="Бонусы" aria-hidden="true">
   <button class="promo-x" id="promoX" type="button" aria-label="Закрыть">×</button>
-  <div class="promo-pic"><img src="img/bottle-kedr.png?v=1112" alt="" width="60" height="180"></div>
+  <!-- Картинка окна: data-set = basket (корзина), group (группой) или box (коробка) -->
+  <div class="promo-pic" data-set="basket"></div>
   <div class="promo-body">
     <svg class="gift" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true"><rect x="6" y="20" width="36" height="22" rx="3" fill="none" stroke="#C9A45C" stroke-width="2"/><rect x="4" y="13" width="40" height="8" rx="2" fill="none" stroke="#C9A45C" stroke-width="2"/><path d="M24 13v29" stroke="#C9A45C" stroke-width="2"/><path d="M24 13c-4-7-12-8-12-3s7 4 12 3zm0 0c4-7 12-8 12-3s-7 4-12 3z" fill="none" stroke="#C9A45C" stroke-width="2" stroke-linejoin="round"/></svg><span class="eyebrow">Бонусы</span>
     <h3>Присоединяйтесь и получайте бонусы!</h3>
@@ -893,6 +911,19 @@ m.addEventListener('click',function(e){if(!e.target.closest('.lfv-box'))close()}
     <div class="promo-btns"><a class="btn btn-green" href="catalog/kabinet.html">Зарегистрироваться</a><button class="btn btn-line" type="button" id="promoGo">К покупкам</button></div>
   </div>
 </aside>
+<script>
+/* окно «Бонусы»: три набора бутылок. Какой показывать — в data-set у .promo-pic */
+(function(){var p=document.querySelector('.promo-pic');if(!p)return;
+function b(n){return '<img class="b" src="img/promo/'+n+'.png" alt="" loading="lazy">'}
+var S={basket:'<div class="bkx">'+['tykva-250','rastoropsha-500','tmin-500','konoplya-500','mindal-250'].map(b).join('')+'<img class="bk" src="img/basket.png" alt=""><img class="fr" src="img/basket-front.png" alt=""></div>',
+group:['tykva-500','rastoropsha-500','tmin-500','konoplya-250','mindal-250','tmin-100','tykva-100'].map(b).join(''),
+box:['tykva-250','rastoropsha-250','tmin-250','konoplya-250'].map(b).join('')+'<div class="box"><img src="img/logo-green.png" alt="Live Food"></div>'};
+var k=p.getAttribute('data-set'),q=/[?&]promo=(basket|group|box)/.exec(location.search);if(q)k=q[1];if(!S[k])k='basket';
+p.setAttribute('data-set',k);p.innerHTML=S[k];
+if(q)addEventListener('load',function(){setTimeout(function(){['promo','promoBg'].forEach(function(i){var e=document.getElementById(i);if(e)e.classList.add('on')})},3600)});
+})();
+</script>
+
 <div class="toast" id="toast" role="status"></div>
 
 <script>
