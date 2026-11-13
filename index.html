@@ -430,14 +430,15 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 .promo-pic .bkx{position:absolute;left:-7%;right:-7%;bottom:3%;aspect-ratio:817/663}
 .promo-pic .bkx img.bk{left:0;bottom:0;width:100%;filter:drop-shadow(0 16px 14px rgba(10,22,14,.4))}.promo-pic .bkx img.fr{left:0;bottom:0;width:100%;z-index:3}
 .promo-pic .bkx img.b{bottom:22%;z-index:2}
-.promo-pic .bkx img.b:nth-of-type(1){height:92%;left:12%;transform:rotate(-5deg)}.promo-pic .bkx img.b:nth-of-type(2){height:104%;left:27%;transform:rotate(-2deg)}.promo-pic .bkx img.b:nth-of-type(3){height:110%;left:43%}.promo-pic .bkx img.b:nth-of-type(4){height:104%;left:59%;transform:rotate(2deg)}.promo-pic .bkx img.b:nth-of-type(5){height:92%;left:74%;transform:rotate(5deg)}
+.promo-pic .bkx img.b:nth-of-type(1){height:98%;left:10%;transform:rotate(-5deg)}.promo-pic .bkx img.b:nth-of-type(2){height:104%;left:26%;transform:rotate(-2deg)}.promo-pic .bkx img.b:nth-of-type(3){height:108%;left:42%}.promo-pic .bkx img.b:nth-of-type(4){height:104%;left:58%;transform:rotate(2deg)}.promo-pic .bkx img.b:nth-of-type(5){height:98%;left:74%;transform:rotate(5deg)}
 /* набор 2: плотной группой */
 .promo-pic[data-set="group"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14%;background:linear-gradient(180deg,rgba(16,34,22,0),rgba(16,34,22,.4))}
-.promo-pic[data-set="group"]>img.b{bottom:6%}
-.promo-pic[data-set="group"]>img.b:nth-of-type(1){height:80%;left:17%}.promo-pic[data-set="group"]>img.b:nth-of-type(2){height:80%;right:17%}.promo-pic[data-set="group"]>img.b:nth-of-type(3){height:86%;left:50%;transform:translateX(-50%)}.promo-pic[data-set="group"]>img.b:nth-of-type(4){height:58%;left:5%;z-index:2;bottom:4%}.promo-pic[data-set="group"]>img.b:nth-of-type(5){height:58%;right:5%;z-index:2;bottom:4%}.promo-pic[data-set="group"]>img.b:nth-of-type(6){height:40%;left:27%;z-index:3;bottom:3%}.promo-pic[data-set="group"]>img.b:nth-of-type(7){height:40%;right:27%;z-index:3;bottom:3%}
+.promo-pic[data-set="group"]>img.b{bottom:5%;height:55%;z-index:2}
+.promo-pic[data-set="group"]>img.b:nth-of-type(1){height:63%;left:1%;bottom:21%;z-index:1}.promo-pic[data-set="group"]>img.b:nth-of-type(2){height:63%;right:1%;bottom:21%;z-index:1}
+.promo-pic[data-set="group"]>img.b:nth-of-type(3){left:5%}.promo-pic[data-set="group"]>img.b:nth-of-type(4){left:28%;bottom:3%}.promo-pic[data-set="group"]>img.b:nth-of-type(5){right:28%;bottom:3%}.promo-pic[data-set="group"]>img.b:nth-of-type(6){right:5%}
 /* набор 3: подарочная коробка */
 .promo-pic[data-set="box"]>img.b{bottom:17%}
-.promo-pic[data-set="box"]>img.b:nth-of-type(1){height:57%;left:6%}.promo-pic[data-set="box"]>img.b:nth-of-type(2){height:62%;left:27.5%}.promo-pic[data-set="box"]>img.b:nth-of-type(3){height:62%;right:27.5%}.promo-pic[data-set="box"]>img.b:nth-of-type(4){height:57%;right:6%}
+.promo-pic[data-set="box"]>img.b{height:60%}.promo-pic[data-set="box"]>img.b:nth-of-type(1){left:7%}.promo-pic[data-set="box"]>img.b:nth-of-type(2){left:29%}.promo-pic[data-set="box"]>img.b:nth-of-type(3){right:29%}.promo-pic[data-set="box"]>img.b:nth-of-type(4){right:7%}
 .promo-pic .box{position:absolute;left:6%;right:6%;bottom:6%;height:35%;z-index:3;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#F4ECD8,#E6D9BA);box-shadow:0 14px 18px rgba(10,22,14,.38),inset 0 2px 0 rgba(255,255,255,.6);display:grid;place-items:center}
 .promo-pic .box::before{content:"";position:absolute;left:0;right:0;top:0;height:9px;border-radius:8px 8px 0 0;background:#C9A45C}
 .promo-pic .box img{position:static;width:62%;height:auto}
@@ -915,9 +916,9 @@ m.addEventListener('click',function(e){if(!e.target.closest('.lfv-box'))close()}
 /* окно «Бонусы»: три набора бутылок. Какой показывать — в data-set у .promo-pic */
 (function(){var p=document.querySelector('.promo-pic');if(!p)return;
 function b(n){return '<img class="b" src="img/promo/'+n+'.png" alt="" loading="lazy">'}
-var S={basket:'<div class="bkx">'+['tykva-250','rastoropsha-500','tmin-500','konoplya-500','mindal-250'].map(b).join('')+'<img class="bk" src="img/basket.png" alt=""><img class="fr" src="img/basket-front.png" alt=""></div>',
-group:['tykva-500','rastoropsha-500','tmin-500','konoplya-250','mindal-250','tmin-100','tykva-100'].map(b).join(''),
-box:['tykva-250','rastoropsha-250','tmin-250','konoplya-250'].map(b).join('')+'<div class="box"><img src="img/logo-green.png" alt="Live Food"></div>'};
+var S={basket:'<div class="bkx">'+['n-konoplya','n-rastoropsha','n-tykva','n-len','n-tmin'].map(b).join('')+'<img class="bk" src="img/basket.png" alt=""><img class="fr" src="img/basket-front.png" alt=""></div>',
+group:['pak-protein','pak-universal','n-rastoropsha','n-tykva','n-len','n-kunzhut'].map(b).join(''),
+box:['n-konoplya','n-tykva2','n-kunzhut2','n-tmin'].map(b).join('')+'<div class="box"><img src="img/logo-green.png" alt="Live Food"></div>'};
 var k=p.getAttribute('data-set'),q=/[?&]promo=(basket|group|box)/.exec(location.search);if(q)k=q[1];if(!S[k])k='basket';
 p.setAttribute('data-set',k);p.innerHTML=S[k];
 if(q)addEventListener('load',function(){setTimeout(function(){['promo','promoBg'].forEach(function(i){var e=document.getElementById(i);if(e)e.classList.add('on')})},3600)});
