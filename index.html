@@ -737,10 +737,11 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 .lfr-modal{position:fixed;inset:0;z-index:90;background:rgba(20,32,24,.78);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:56px 16px 32px}.lfr-modal.on{display:flex}
 .lfr-modal img{max-width:min(560px,100%);height:auto;border-radius:12px;border:10px solid #FBF7EE;background:#FBF7EE}
 .lfr-modal button{position:fixed;top:12px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#FBF7EE;color:#1B2A20;font-size:1.5rem;cursor:pointer}
-@media (max-width:700px){.lfr-nav{display:none}.lfr-card{flex-basis:80vw}.lfr-row{gap:14px}}
+@media (max-width:700px){.lfr-nav{display:none}.lfr-all{display:flex;align-items:center;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;margin-top:20px;scrollbar-width:thin;scrollbar-color:var(--gold,#C9A45C) transparent}.lfr-wrap,.lfr-row{display:contents}.lfr-card{flex:0 0 80vw}}
 </style>
 <div class="wrap">
 <div class="head"><div><span class="eyebrow">Отзывы</span><h2>Что о нас говорят наши клиенты</h2></div></div>
+<div class="lfr-all">
 <div class="lfr-wrap g1"><button type="button" class="lfr-nav p" aria-label="Назад">‹</button><div class="lfr-row">
 <button type="button" class="lfr-card" data-src="img/reviews/r05.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r05.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="998" loading="lazy"></button>
 <button type="button" class="lfr-card" data-src="img/reviews/r06.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r06.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="1107" loading="lazy"></button>
@@ -788,6 +789,7 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 <button type="button" class="lfr-card" data-src="img/reviews/r37.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r37.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="310" loading="lazy"></button>
 <button type="button" class="lfr-card" data-src="img/reviews/r19.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r19.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="300" loading="lazy"></button>
 </div><button type="button" class="lfr-nav n" aria-label="Вперёд">›</button></div>
+</div>
 </div>
 <div class="lfr-modal" id="lfrModal" role="dialog" aria-label="Отзыв"><button type="button" aria-label="Закрыть">×</button><img alt="Отзыв клиента Live Food"></div>
 <script>(function(){var m=document.getElementById('lfrModal');if(!m)return;var im=m.querySelector('img');
