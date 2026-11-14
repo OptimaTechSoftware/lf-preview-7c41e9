@@ -533,7 +533,6 @@ ready(function(){
   }
   [].forEach.call(document.querySelectorAll('.toast'),function(t){new MutationObserver(function(){t.classList.toggle('lf-q',/корзин|добавлен/i.test(t.textContent))}).observe(t,{childList:true,characterData:true,subtree:true})});
   var sr=document.querySelector('.sets-row');
-  if(sr&&window.innerWidth<=600&&sr.children.length>1){var h=document.createElement('p');h.className='lf-hint';h.textContent='Листайте вправо — всего '+sr.children.length;sr.parentNode.insertBefore(h,sr.nextSibling)}
   var cs=document.getElementById('chipSel');
   if(cs)cs.addEventListener('change',function(){var b=document.querySelector('#chips button[data-f="'+cs.value+'"]');if(b)b.click()});
   var ds=document.querySelector('[data-sum]');

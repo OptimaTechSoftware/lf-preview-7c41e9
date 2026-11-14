@@ -734,7 +734,6 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 .lfr-card{flex:0 0 clamp(270px,25vw,330px);display:flex;align-items:center;padding:12px;margin:0;background:#FBF7EE;border:1px solid var(--line,#E4DFD2);border-radius:14px;scroll-snap-align:start;cursor:zoom-in;font:inherit;transition:box-shadow .3s,transform .3s}
 .lfr-card:hover{box-shadow:0 14px 30px rgba(27,42,32,.10);transform:translateY(-2px)}
 .lfr-card img{display:block;width:100%;height:auto;border-radius:10px}
-.lfr-note{margin-top:6px;color:var(--ink-2,#4A574E);font-size:.95rem}
 .lfr-modal{position:fixed;inset:0;z-index:90;background:rgba(20,32,24,.78);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:56px 16px 32px}.lfr-modal.on{display:flex}
 .lfr-modal img{max-width:min(560px,100%);height:auto;border-radius:12px;border:10px solid #FBF7EE;background:#FBF7EE}
 .lfr-modal button{position:fixed;top:12px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#FBF7EE;color:#1B2A20;font-size:1.5rem;cursor:pointer}
@@ -789,7 +788,6 @@ dialog::backdrop{background:rgba(15,28,20,.7);backdrop-filter:blur(4px)}
 <button type="button" class="lfr-card" data-src="img/reviews/r37.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r37.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="310" loading="lazy"></button>
 <button type="button" class="lfr-card" data-src="img/reviews/r19.jpg" aria-label="Увеличить отзыв"><img src="img/reviews/r19.jpg" alt="Отзыв клиента Live Food, переписка" width="640" height="300" loading="lazy"></button>
 </div><button type="button" class="lfr-nav n" aria-label="Вперёд">›</button></div>
-<p class="lfr-note">39 отзывов из переписки с клиентами. Нажмите на отзыв, чтобы увеличить.</p>
 </div>
 <div class="lfr-modal" id="lfrModal" role="dialog" aria-label="Отзыв"><button type="button" aria-label="Закрыть">×</button><img alt="Отзыв клиента Live Food"></div>
 <script>(function(){var m=document.getElementById('lfrModal');if(!m)return;var im=m.querySelector('img');
@@ -1613,7 +1611,6 @@ ready(function(){
   }
   [].forEach.call(document.querySelectorAll('.toast'),function(t){new MutationObserver(function(){t.classList.toggle('lf-q',/корзин|добавлен/i.test(t.textContent))}).observe(t,{childList:true,characterData:true,subtree:true})});
   var sr=document.querySelector('.sets-row');
-  if(sr&&window.innerWidth<=600&&sr.children.length>1){var h=document.createElement('p');h.className='lf-hint';h.textContent='Листайте вправо — всего '+sr.children.length;sr.parentNode.insertBefore(h,sr.nextSibling)}
   var cs=document.getElementById('chipSel');
   if(cs)cs.addEventListener('change',function(){var b=document.querySelector('#chips button[data-f="'+cs.value+'"]');if(b)b.click()});
   var ds=document.querySelector('[data-sum]');
